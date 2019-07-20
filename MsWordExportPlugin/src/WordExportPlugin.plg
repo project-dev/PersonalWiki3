@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: WordExportPlugin - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPE4.tmp" を作成し、次の内容を記録します
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\Debug/MsWordExportPlugin.pdb" /debug /machine:I386 /def:".\WordExportPlugin.def" /out:"..\..\bin\Debug\plugins\MsWordExportPlugin.pwp" /implib:"..\lib\Debug/MsWordExportPlugin.lib" /pdbtype:sept 
+\Develop\VC\PersonalWiki3\MsWordExportPlugin\lib\Debug\StdAfx.obj
+\Develop\VC\PersonalWiki3\MsWordExportPlugin\lib\Debug\WordExportPlugin.obj
+\Develop\VC\PersonalWiki3\MsWordExportPlugin\lib\Debug\WordExportPlugin.res
+\Develop\VC\PersonalWiki3\PluginLib\lib\Debug\PluginLib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSPE4.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/MsWordExportPlugin.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/MsWordExportPlugin.exp を作成中
+MsWordExportPlugin.exp : warning LNK4070: .EXP 内の /OUT:WordExportPlugin.pwp ﾃﾞｨﾚｸﾃｨﾌﾞの指定が出力ﾌｧｲﾙ名 "..\..\bin\Debug\plugins\MsWordExportPlugin.pwp" と異なっています; ﾃﾞｨﾚｸﾃｨﾌﾞは無視されます
+
+
+
+<h3>結果</h3>
+MsWordExportPlugin.pwp - ｴﾗｰ 0、警告 1
+</pre>
+</body>
+</html>

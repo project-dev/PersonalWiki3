@@ -1,0 +1,99 @@
+/* 
+ * ’†ƒtƒHƒ“ƒg‚Ìİ’è
+ */
+
+@import "default-base.css";
+
+/*
+ * Šî–{
+ */
+body{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:10pt;
+}
+
+td{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:10pt;
+}
+
+/*
+ * –{•¶
+ */
+table.body{
+}
+
+td.body{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+}
+
+/*
+ * Œ©o‚µ
+ */
+h1{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:12pt;
+	font-weight			:BOLD;
+}
+
+h2{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:10pt;
+	font-weight			:BOLD;
+}
+
+h3{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:10pt;
+	font-weight			:BOLD;
+}
+
+/*
+ * ®Œ`•¶š—ñ
+ */
+pre{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:10pt;
+}
+
+/*
+ * ƒe[ƒuƒ‹
+ */
+table.normal{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+}
+
+td.normal{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+}
+
+td.head{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-weight			:BOLD;
+}
+
+/*
+ * æ“ª/––”öƒŠƒ“ƒN
+ */
+DIV.TBLink{
+	font-size			: 7pt;
+	font-family			: Impact, sans-serif;
+}
+
+/*
+ * ‰Óğ‘‚«
+ */
+ol{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:10pt;
+}
+
+ul{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:10pt;
+}
+
+li{
+	font-family			:"‚l‚r ƒSƒVƒbƒN", sans-serif;
+	font-size			:10pt;
+}

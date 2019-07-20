@@ -1,0 +1,14 @@
+; ExcelExportPlugin.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "ExcelExportPlugin"
+DESCRIPTION  'ExcelExportPlugin Windows Dynamic Link Library'
+
+EXPORTS
+    GetPluginInfo       @1
+    ShowSetupDlg        @2
+    GetUse              @3
+    SetUse              @4
+    ExitPlugin          @5
+    ReqDataType         @6
+    Export              @7
+    ; 明示的なエクスポートはここへ記述できます

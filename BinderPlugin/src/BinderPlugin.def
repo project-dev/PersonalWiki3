@@ -1,0 +1,14 @@
+; BinderPlugin.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "BinderPlugin"
+DESCRIPTION  'BinderPlugin Windows Dynamic Link Library'
+
+EXPORTS
+    GetPluginInfo       @1
+    ShowSetupDlg        @2
+    GetUse              @3
+    SetUse              @4
+    ExitPlugin          @5
+    GetTabWnd           @6
+    SetLogFlag          @7
+    ; 明示的なエクスポートはここへ記述できます

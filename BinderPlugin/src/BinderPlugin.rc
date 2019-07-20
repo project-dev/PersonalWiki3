@@ -1,0 +1,263 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BinderPlugin.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Binder Plugin\0"
+            VALUE "FileVersion", "1, 0, 0, 1 Alpha1\0"
+            VALUE "InternalName", "BinderPlugin\0"
+            VALUE "LegalCopyright", "Copyright (C)  Project D.E.V 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BinderPlugin.DLL\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "BinderPlugin ﾀﾞｲﾅﾐｯｸ ﾘﾝｸ ﾗｲﾌﾞﾗﾘ\0"
+            VALUE "ProductVersion", "1, 0, 0, 1 Alpha1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INP_BINDER_NAME_DLG DIALOG DISCARDABLE  0, 0, 187, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ﾀﾞｲｱﾛｸﾞ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,76,28,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,28,50,14
+    EDITTEXT        IDC_BINDER_NAME,51,7,129,14,ES_AUTOHSCROLL
+    LTEXT           "バインダー名",IDC_STATIC,7,7,39,14,SS_CENTERIMAGE
+END
+
+IDD_CONF_DLG DIALOG DISCARDABLE  0, 0, 187, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "設定"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,54,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,54,50,14
+    CONTROL         "HTMLを取り込むときにJavaScript等を無効にする。",
+                    IDC_SECURE_HTML,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    6,163,10
+    LTEXT           "scriptタグ、objectタグを無意味なタグに置き換えます。この設定を無効にすると、悪意のあるスクリプトが実行される可能性があります。",
+                    IDC_STATIC,7,23,173,27
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDM_ADDBINDER
+    BUTTON      IDM_ADDFILE
+    BUTTON      IDM_FILEDEL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "toolbar1.bmp"
+IDB_TOOLBAR256          BITMAP  DISCARDABLE     "res\\ToolBar256.bmp"
+IDB_TREEICON            BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "TREEPOP1"
+    BEGIN
+        MENUITEM "新しくバインダーを追加",      IDM_ADDBINDER
+        MENUITEM "ファイルをバインダーに登録",  IDM_ADDFILE
+        MENUITEM SEPARATOR
+        MENUITEM "削除",                        IDM_FILEDEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS DISCARDABLE 
+BEGIN
+    "C",            IDM_CLIPCOPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      IDM_FILEDEL,            VIRTKEY, NOINVERT
+    VK_INSERT,      IDM_ADDFILE,            VIRTKEY, NOINVERT
+    VK_INSERT,      IDM_ADDBINDER,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INP_BINDER_NAME_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+        HORZGUIDE, 21
+    END
+
+    IDD_CONF_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 68
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_TREE                "ツリー"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_ADDBINDER           "バインダーを追加する"
+    IDM_ADDFILE             "ファイルを追加する"
+    IDM_FILEDEL             "ファイルを削除する"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\BinderPlugin.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

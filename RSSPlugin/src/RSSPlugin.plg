@@ -1,0 +1,1378 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: devstaticlib - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8C6.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/devstaticlib.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"M:\Develop\VC\project_dev_lib\devstaticlib\src\IniFile.cpp"
+"M:\Develop\VC\project_dev_lib\devstaticlib\src\LogFile.cpp"
+"M:\Develop\VC\project_dev_lib\devstaticlib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8C6.tmp" 
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe -lib /nologo /out:"..\..\Release\lib\Release\devstaticlib.lib"  .\Release\IniFile.obj .\Release\LogFile.obj .\Release\StdAfx.obj " の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+IniFile.cpp
+LogFile.cpp
+StdAfx.cpp
+ﾗｲﾌﾞﾗﾘを作成中...
+<h3>
+--------------------構成: devjava - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/devjava.res" /d "NDEBUG" "M:\Develop\VC\project_dev_lib\devjava\src\devjava.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8C8.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVJAVA_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devjava.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\project_dev_lib\devjava\src\ByteArrayOutputStream.cpp"
+"M:\Develop\VC\project_dev_lib\devjava\src\devjava.cpp"
+"M:\Develop\VC\project_dev_lib\devjava\src\StringBuffer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8C8.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8C9.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVJAVA_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devjava.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\project_dev_lib\devjava\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8C9.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8CA.tmp" を作成し、次の内容を記録します
+[
+devstaticlib.lib /nologo /dll /incremental:no /pdb:"..\lib\Release/devjava.pdb" /machine:I386 /out:"..\..\Release\bin\Release/devjava.dll" /implib:"..\lib\Release/devjava.lib" /libpath:"..\..\release\lib\release" 
+\Develop\VC\project_dev_lib\devjava\lib\Release\ByteArrayOutputStream.obj
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.obj
+\Develop\VC\project_dev_lib\devjava\lib\Release\StdAfx.obj
+\Develop\VC\project_dev_lib\devjava\lib\Release\StringBuffer.obj
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.res
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8CA.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+ByteArrayOutputStream.cpp
+devjava.cpp
+StringBuffer.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release/devjava.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release/devjava.exp を作成中
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D0.bat" を作成し、次の内容を記録します
+[
+@echo off
+..\..\..\_common\upx.exe -9 ..\..\Release\bin\release\devjava.dll
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D0.bat" の作成中
+
+                       Ultimate Packer for eXecutables
+  Copyright (C) 1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007
+UPX 3.00w       Markus Oberhumer, Laszlo Molnar & John Reiser   Apr 27th 2007
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+     36864 ->     12288   33.33%    win32/pe     devjava.dll
+
+Packed 1 file.
+<h3>
+--------------------構成: devlib - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/devlib.res" /d "NDEBUG" "M:\Develop\VC\project_dev_lib\devlib\src\devlib.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D1.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devlib" /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVLIB_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devlib.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\project_dev_lib\devlib\src\Cryptography.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\DebugSupport.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\devlib.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\devlib_debug.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\devlib_file.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\devlib_main.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\DevString.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\EnvInfo.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\FileDialogEx.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\FolderDialog.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\ImageObject.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\StringEncode.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D1.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D2.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devlib" /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVLIB_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devlib.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\project_dev_lib\devlib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D2.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D3.tmp" を作成し、次の内容を記録します
+[
+kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib Version.lib devjava.lib devstaticlib.lib /nologo /dll /incremental:no /pdb:"..\lib\Release/devlib.pdb" /machine:I386 /out:"..\..\Release\bin\Release/devlib.dll" /implib:"..\lib\Release/devlib.lib" /libpath:"..\..\release\lib\release" 
+\Develop\VC\project_dev_lib\devlib\lib\Release\Cryptography.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\DebugSupport.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib_debug.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib_file.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib_main.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\DevString.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\EnvInfo.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\FileDialogEx.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\FolderDialog.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\ImageObject.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\StdAfx.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\StringEncode.obj
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.res
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.lib
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D3.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+Cryptography.cpp
+DebugSupport.cpp
+devlib.cpp
+devlib_debug.cpp
+devlib_file.cpp
+devlib_main.cpp
+DevString.cpp
+EnvInfo.cpp
+FileDialogEx.cpp
+FolderDialog.cpp
+ImageObject.cpp
+StringEncode.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release/devlib.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release/devlib.exp を作成中
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D9.bat" を作成し、次の内容を記録します
+[
+@echo off
+..\..\..\_common\upx.exe -9 ..\..\Release\bin\release\devlib.dll
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8D9.bat" の作成中
+
+                       Ultimate Packer for eXecutables
+  Copyright (C) 1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007
+UPX 3.00w       Markus Oberhumer, Laszlo Molnar & John Reiser   Apr 27th 2007
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+     94208 ->     37376   39.67%    win32/pe     devlib.dll
+
+Packed 1 file.
+<h3>
+--------------------構成: devmfc - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/devmfc.res" /d "NDEBUG" /d "_AFXDLL" "M:\Develop\VC\project_dev_lib\devmfc\src\devmfc.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8DA.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devmfc" /I "..\..\release\include\devlib" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DEVMFC_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devmfc.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\project_dev_lib\devmfc\src\AbstractWnd.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\BaseData.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\devmfc.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\EditEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\FileCtrl.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\FindFile.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\HwndTabCtrl.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\LineWnd.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\ListCtrlEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\ProgressStatusBar.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\RichEditCtrlEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\RichEditViewEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\TabCtrlEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\TabDropTarget.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\TabView.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\TreeCtrlEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\WndTabCtrl.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\XMLDocument.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\XMLItem.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8DA.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8DB.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\devmfc" /I "..\..\release\include\devlib" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DEVMFC_EXPORTS" /FR"..\lib\Release/" /Fp"..\lib\Release/devmfc.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\project_dev_lib\devmfc\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8DB.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8DC.tmp" を作成し、次の内容を記録します
+[
+devlib.lib devstaticlib.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\lib\Release/devmfc.pdb" /machine:I386 /def:".\devmfc.def" /out:"..\..\Release\bin\Release/devmfc.dll" /implib:"..\lib\Release/devmfc.lib" /libpath:"..\include" /libpath:"..\..\release\lib\release" 
+\Develop\VC\project_dev_lib\devmfc\lib\Release\AbstractWnd.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\BaseData.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\devmfc.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\EditEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\FileCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\FindFile.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\HwndTabCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\LineWnd.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\ListCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\ProgressStatusBar.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\RichEditCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\RichEditViewEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\StdAfx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\TabCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\TabDropTarget.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\TabView.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\TreeCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\WndTabCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\XMLDocument.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\XMLItem.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Release\devmfc.res
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.lib
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8DC.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+AbstractWnd.cpp
+BaseData.cpp
+devmfc.cpp
+EditEx.cpp
+FileCtrl.cpp
+FindFile.cpp
+HwndTabCtrl.cpp
+LineWnd.cpp
+ListCtrlEx.cpp
+ProgressStatusBar.cpp
+RichEditCtrlEx.cpp
+RichEditViewEx.cpp
+TabCtrlEx.cpp
+TabDropTarget.cpp
+TabView.cpp
+TreeCtrlEx.cpp
+WndTabCtrl.cpp
+XMLDocument.cpp
+XMLItem.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release/devmfc.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release/devmfc.exp を作成中
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E2.bat" を作成し、次の内容を記録します
+[
+@echo off
+..\..\..\_common\upx.exe -9 ..\..\Release\bin\release\devmfc.dll
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E2.bat" の作成中
+
+                       Ultimate Packer for eXecutables
+  Copyright (C) 1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007
+UPX 3.00w       Markus Oberhumer, Laszlo Molnar & John Reiser   Apr 27th 2007
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+     86016 ->     35840   41.67%    win32/pe     devmfc.dll
+
+Packed 1 file.
+<h3>
+--------------------構成: PluginLib - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E3.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Release/PluginLib.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\PluginLib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E3.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E4.tmp" を作成し、次の内容を記録します
+[
+/nologo /out:"..\lib\Release\PluginLib.lib" 
+\Develop\VC\PersonalWiki3\PluginLib\lib\Release\StdAfx.obj
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Release\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe -lib @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E4.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ﾗｲﾌﾞﾗﾘを作成中...
+devlib.lib(devlib.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は devjava.lib(devjava.dll) で定義されています; 2 つ目以降の定義は無視されます
+devmfc.lib(devmfc.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は devjava.lib(devjava.dll) で定義されています; 2 つ目以降の定義は無視されます
+<h3>
+--------------------構成: RSSPlugin - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/RSSPlugin.res" /d "NDEBUG" /d "_AFXDLL" "M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RSSPlugin.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E7.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Release/RSSPlugin.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RSSBase.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RssCtrl.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RSSList.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RSSPlugin.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RssWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\SepBtn.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\SetDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E7.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E8.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Release/RSSPlugin.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E8.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E9.tmp" を作成し、次の内容を記録します
+[
+PluginLib.lib devlib.lib devmfc.lib Wininet.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\lib\Release/RSSPlugin.pdb" /machine:I386 /def:".\RSSPlugin.def" /out:"..\..\bin\Release\plugins\RSSPlugin.pwp" /implib:"..\lib\Release/RSSPlugin.lib" /libpath:"..\..\PluginLib\lib\release" /libpath:"..\..\..\project_dev_lib\release\lib\release" 
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\RSSBase.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\RssCtrl.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\RSSList.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\RSSPlugin.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\RssWnd.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\SepBtn.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\SetDlg.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\StdAfx.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\RSSPlugin.res
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Release\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+\Develop\VC\PersonalWiki3\PluginLib\lib\Release\PluginLib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8E9.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+RSSBase.cpp
+RssCtrl.cpp
+M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RssCtrl.cpp(433) : warning C4101: 'nErr' : ﾛｰｶﾙ変数は 1 度も使われません。
+RSSList.cpp
+RSSPlugin.cpp
+RssWnd.cpp
+SepBtn.cpp
+SetDlg.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release/RSSPlugin.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release/RSSPlugin.exp を作成中
+<h3>
+--------------------構成: DrawerPlugin - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/DrawerPlugin.res" /d "NDEBUG" /d "_AFXDLL" "M:\Develop\VC\PersonalWiki3\DrawerPlugin\src\DrawerPlugin.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8EF.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\drawer" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Release/DrawerPlugin.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\DrawerPlugin\src\DrawerPlugin.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8EF.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F0.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\drawer" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Release/DrawerPlugin.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\DrawerPlugin\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F0.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F1.tmp" を作成し、次の内容を記録します
+[
+PluginLib.lib devlib.lib devmfc.lib DrawerCore.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\lib\Release/DrawerPlugin.pdb" /machine:I386 /def:".\DrawerPlugin.def" /out:"..\..\bin\Release\plugins\DrawerPlugin.pwp" /implib:"..\lib\Release/DrawerPlugin.lib" /libpath:"..\..\PluginLib\lib\release" /libpath:"..\..\..\project_dev_lib\release\lib\release" 
+\Develop\VC\PersonalWiki3\DrawerPlugin\lib\Release\DrawerPlugin.obj
+\Develop\VC\PersonalWiki3\DrawerPlugin\lib\Release\StdAfx.obj
+\Develop\VC\PersonalWiki3\DrawerPlugin\lib\Release\DrawerPlugin.res
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Release\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+\Develop\VC\PersonalWiki3\PluginLib\lib\Release\PluginLib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F1.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+DrawerPlugin.cpp
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release/DrawerPlugin.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release/DrawerPlugin.exp を作成中
+<h3>
+--------------------構成: BinderPlugin - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/BinderPlugin.res" /d "NDEBUG" /d "_AFXDLL" "M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BinderPlugin.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F7.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devstaticlib" /I "..\..\..\_common\bregexp" /I "..\..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Release/BinderPlugin.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\Binder.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BinderDropTarget.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BinderPlugin.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BinderWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BregExpRap.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\InpBinderNameDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F7.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F8.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devstaticlib" /I "..\..\..\_common\bregexp" /I "..\..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Release/BinderPlugin.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F8.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F9.tmp" を作成し、次の内容を記録します
+[
+PluginLib.lib devlib.lib devstaticlib.lib BREGEXP.LIB Wininet.lib devmfc.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\lib\ReleaseBinderPlugin.pdb" /machine:I386 /def:".\BinderPlugin.def" /out:"..\..\bin\Release\plugins\BinderPlugin.pwp" /implib:"..\lib\Release/BinderPlugin.lib" /libpath:"..\..\PluginLib\lib\release" /libpath:"..\..\..\project_dev_lib\release\lib\release" /libpath:"..\..\..\_common\bregexp" 
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\Binder.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\BinderDropTarget.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\BinderPlugin.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\BinderWnd.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\BregExpRap.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\InpBinderNameDlg.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\StdAfx.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\BinderPlugin.res
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Release\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+\Develop\VC\PersonalWiki3\PluginLib\lib\Release\PluginLib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8F9.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+Binder.cpp
+BinderDropTarget.cpp
+BinderPlugin.cpp
+BinderWnd.cpp
+BregExpRap.cpp
+InpBinderNameDlg.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release/BinderPlugin.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release/BinderPlugin.exp を作成中
+<h3>
+--------------------構成: DrawerCore - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release\DrawerCore/DrawerCore.res" /d "NDEBUG" /d "_AFXDLL" "M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerCore.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8FF.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\drawer" /I "..\..\release\include\devmfc" /I "..\..\..\_common\gdiplus\include" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DRAWER_EXPORTS" /Fp"..\lib\Release\DrawerCore/DrawerCore.pch" /Yu"stdafx.h" /Fo"..\lib\Release\DrawerCore/" /Fd"..\lib\Release\DrawerCore/" /FD /c 
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerConfig.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerCore.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerCtrl.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DRawerEdit.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerPropDlg.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawInfo.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP8FF.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP900.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\release\include\drawer" /I "..\..\release\include\devmfc" /I "..\..\..\_common\gdiplus\include" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DRAWER_EXPORTS" /Fp"..\lib\Release\DrawerCore/DrawerCore.pch" /Yc"stdafx.h" /Fo"..\lib\Release\DrawerCore/" /Fd"..\lib\Release\DrawerCore/" /FD /c 
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP900.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP901.tmp" を作成し、次の内容を記録します
+[
+Gdiplus.lib devlib.lib devmfc.lib devstaticlib.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"..\lib\Release\DrawerCore/DrawerCore.pdb" /machine:I386 /def:".\DrawerCore.def" /out:"..\..\Release\bin\Release/DrawerCore.dll" /implib:"..\lib\Release\DrawerCore/DrawerCore.lib" /libpath:"..\..\..\_common\gdiplus" /libpath:"..\..\release\lib\release" 
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\DrawerConfig.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\DrawerCore.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\DrawerCtrl.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\DRawerEdit.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\DrawerPropDlg.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\DrawInfo.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\StdAfx.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\DrawerCore.res
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP901.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+DrawerConfig.cpp
+DrawerCore.cpp
+DrawerCtrl.cpp
+DRawerEdit.cpp
+DrawerPropDlg.cpp
+DrawInfo.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Release\DrawerCore/DrawerCore.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Release\DrawerCore/DrawerCore.exp を作成中
+<h3>
+--------------------構成: PersonalWiki - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Release/PersonalWiki.res" /d "NDEBUG" /d "_AFXDLL" "M:\Develop\VC\PersonalWiki3\src\PersonalWiki.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP907.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\project_dev_lib\release\include\devlib" /I "..\..\project_dev_lib\release\include\devstaticlib" /I "..\PluginLib\include" /I "..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Release/PersonalWiki.pch" /Yu"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\src\AbstractBaseWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AnalisysWiki.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage1.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage2.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage3.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage4.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage5.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage6.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage7.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage8.cpp"
+"M:\Develop\VC\PersonalWiki3\src\CalenderWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\src\CalView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\ChartWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgAppSet.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgDateInp.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixData.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixDataPage1.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixDataPage2.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixDataPage3.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixDataPage4.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgInfo.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgInpWikiPage.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgPwInp.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgToDay.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgToDoInp.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgWikiInp.cpp"
+"M:\Develop\VC\PersonalWiki3\src\EvDatBase.cpp"
+"M:\Develop\VC\PersonalWiki3\src\EventDate.cpp"
+"M:\Develop\VC\PersonalWiki3\src\FindWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\src\FixedData.cpp"
+"M:\Develop\VC\PersonalWiki3\src\InfoView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\MainFrm.cpp"
+"M:\Develop\VC\PersonalWiki3\src\MimeType.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PersonalWiki.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PreviewHtmlView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiDoc.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiIniFile.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiPlgList.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiPlugin.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiPluginException.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\ScDateData.cpp"
+"M:\Develop\VC\PersonalWiki3\src\TodoData.cpp"
+"M:\Develop\VC\PersonalWiki3\src\ToDoView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\WikiWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP907.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP908.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /I "..\..\project_dev_lib\release\include\devlib" /I "..\..\project_dev_lib\release\include\devstaticlib" /I "..\PluginLib\include" /I "..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Release/PersonalWiki.pch" /Yc"stdafx.h" /Fo"..\lib\Release/" /Fd"..\lib\Release/" /FD /c 
+"M:\Develop\VC\PersonalWiki3\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP908.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP909.tmp" を作成し、次の内容を記録します
+[
+devlib.lib devstaticlib.lib devmfc.lib /nologo /subsystem:windows /incremental:no /pdb:"..\lib\Release/PersonalWiki3.pdb" /machine:I386 /out:"..\bin\Release/PersonalWiki3.exe" /libpath:"..\..\project_dev_lib\release\lib\release" 
+\Develop\VC\PersonalWiki3\lib\Release\AbstractBaseWnd.obj
+\Develop\VC\PersonalWiki3\lib\Release\AnalisysWiki.obj
+\Develop\VC\PersonalWiki3\lib\Release\AppSetPage1.obj
+\Develop\VC\PersonalWiki3\lib\Release\AppSetPage2.obj
+\Develop\VC\PersonalWiki3\lib\Release\AppSetPage3.obj
+\Develop\VC\PersonalWiki3\lib\Release\AppSetPage4.obj
+\Develop\VC\PersonalWiki3\lib\Release\AppSetPage5.obj
+\Develop\VC\PersonalWiki3\lib\Release\AppSetPage6.obj
+\Develop\VC\PersonalWiki3\lib\Release\AppSetPage7.obj
+\Develop\VC\PersonalWiki3\lib\Release\AppSetPage8.obj
+\Develop\VC\PersonalWiki3\lib\Release\CalenderWnd.obj
+\Develop\VC\PersonalWiki3\lib\Release\CalView.obj
+\Develop\VC\PersonalWiki3\lib\Release\ChartWnd.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgAppSet.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgDateInp.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgFixData.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgFixDataPage1.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgFixDataPage2.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgFixDataPage3.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgFixDataPage4.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgInfo.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgInpWikiPage.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgPwInp.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgToDay.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgToDoInp.obj
+\Develop\VC\PersonalWiki3\lib\Release\DlgWikiInp.obj
+\Develop\VC\PersonalWiki3\lib\Release\EvDatBase.obj
+\Develop\VC\PersonalWiki3\lib\Release\EventDate.obj
+\Develop\VC\PersonalWiki3\lib\Release\FindWnd.obj
+\Develop\VC\PersonalWiki3\lib\Release\FixedData.obj
+\Develop\VC\PersonalWiki3\lib\Release\InfoView.obj
+\Develop\VC\PersonalWiki3\lib\Release\MainFrm.obj
+\Develop\VC\PersonalWiki3\lib\Release\MimeType.obj
+\Develop\VC\PersonalWiki3\lib\Release\PersonalWiki.obj
+\Develop\VC\PersonalWiki3\lib\Release\PreviewHtmlView.obj
+\Develop\VC\PersonalWiki3\lib\Release\PWikiDoc.obj
+\Develop\VC\PersonalWiki3\lib\Release\PWikiIniFile.obj
+\Develop\VC\PersonalWiki3\lib\Release\PWikiPlgList.obj
+\Develop\VC\PersonalWiki3\lib\Release\PWikiPlugin.obj
+\Develop\VC\PersonalWiki3\lib\Release\PWikiPluginException.obj
+\Develop\VC\PersonalWiki3\lib\Release\PWikiView.obj
+\Develop\VC\PersonalWiki3\lib\Release\ScDateData.obj
+\Develop\VC\PersonalWiki3\lib\Release\StdAfx.obj
+\Develop\VC\PersonalWiki3\lib\Release\TodoData.obj
+\Develop\VC\PersonalWiki3\lib\Release\ToDoView.obj
+\Develop\VC\PersonalWiki3\lib\Release\WikiWnd.obj
+\Develop\VC\PersonalWiki3\lib\Release\PersonalWiki.res
+\Develop\VC\project_dev_lib\devjava\lib\Release\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Release\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Release\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Release\devstaticlib.lib
+\Develop\VC\PersonalWiki3\PluginLib\lib\Release\PluginLib.lib
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Release\RSSPlugin.lib
+\Develop\VC\PersonalWiki3\DrawerPlugin\lib\Release\DrawerPlugin.lib
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Release\BinderPlugin.lib
+\Develop\VC\project_dev_lib\DrawerCore\lib\Release\DrawerCore\DrawerCore.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP909.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+
+NOTE: WINVER has been defined as 0x0500 or greater which enables
+Windows NT 5.0 and Windows 98 features. When these headers were released,
+Windows NT 5.0 beta 1 and Windows 98 beta 2.1 were the current versions.
+
+For this release when WINVER is defined as 0x0500 or greater, you can only
+build beta or test applications.  To build a retail application,
+set WINVER to 0x0400 or visit http://www.microsoft.com/msdn/sdk
+to see if retail Windows NT 5.0 or Windows 98 headers are available.
+
+See the SDK release notes for more information.
+
+ｺﾝﾊﾟｲﾙ中...
+AbstractBaseWnd.cpp
+AnalisysWiki.cpp
+AppSetPage1.cpp
+AppSetPage2.cpp
+AppSetPage3.cpp
+AppSetPage4.cpp
+AppSetPage5.cpp
+AppSetPage6.cpp
+AppSetPage7.cpp
+AppSetPage8.cpp
+CalenderWnd.cpp
+CalView.cpp
+ChartWnd.cpp
+DlgAppSet.cpp
+DlgDateInp.cpp
+DlgFixData.cpp
+DlgFixDataPage1.cpp
+DlgFixDataPage2.cpp
+DlgFixDataPage3.cpp
+DlgFixDataPage4.cpp
+ｺｰﾄﾞを生成中...
+ｺﾝﾊﾟｲﾙ中...
+DlgInfo.cpp
+DlgInpWikiPage.cpp
+DlgPwInp.cpp
+DlgToDay.cpp
+DlgToDoInp.cpp
+DlgWikiInp.cpp
+EvDatBase.cpp
+EventDate.cpp
+FindWnd.cpp
+FixedData.cpp
+InfoView.cpp
+MainFrm.cpp
+MimeType.cpp
+PersonalWiki.cpp
+PreviewHtmlView.cpp
+PWikiDoc.cpp
+PWikiIniFile.cpp
+PWikiPlgList.cpp
+PWikiPlugin.cpp
+M:\Develop\VC\PersonalWiki3\src\PWikiPlugin.cpp(59) : warning C4101: 'nErr' : ﾛｰｶﾙ変数は 1 度も使われません。
+PWikiPluginException.cpp
+ｺｰﾄﾞを生成中...
+ｺﾝﾊﾟｲﾙ中...
+PWikiView.cpp
+ScDateData.cpp
+TodoData.cpp
+ToDoView.cpp
+WikiWnd.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP90D.bat" を作成し、次の内容を記録します
+[
+@echo off
+copy /Y ..\..\project_dev_lib\release\bin\release\devlib.dll ..\bin\release
+copy /Y ..\..\project_dev_lib\release\bin\release\devjava.dll ..\bin\release
+copy /Y ..\..\project_dev_lib\release\bin\release\devmfc.dll ..\bin\release
+..\..\_common\upx.exe -9 ..\bin\release\PersonalWiki3.exe
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP90D.bat" の作成中
+
+        1 個のファイルをコピーしました。
+        1 個のファイルをコピーしました。
+        1 個のファイルをコピーしました。
+                       Ultimate Packer for eXecutables
+  Copyright (C) 1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007
+UPX 3.00w       Markus Oberhumer, Laszlo Molnar & John Reiser   Apr 27th 2007
+
+        File size         Ratio      Format      Name
+   --------------------   ------   -----------   -----------
+    299008 ->    103424   34.59%    win32/pe     PersonalWiki3.exe
+
+Packed 1 file.
+
+
+
+<h3>結果</h3>
+PersonalWiki3.exe - ｴﾗｰ 0、警告 4
+<h3>
+--------------------構成: devstaticlib - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP90E.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Debug/devstaticlib.pch" /YX /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\devstaticlib\src\IniFile.cpp"
+"M:\Develop\VC\project_dev_lib\devstaticlib\src\LogFile.cpp"
+"M:\Develop\VC\project_dev_lib\devstaticlib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP90E.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP90F.tmp" を作成し、次の内容を記録します
+[
+/nologo /out:"..\..\Release\lib\Debug\devstaticlib.lib" 
+\Develop\VC\project_dev_lib\devstaticlib\lib\Debug\IniFile.obj
+\Develop\VC\project_dev_lib\devstaticlib\lib\Debug\LogFile.obj
+\Develop\VC\project_dev_lib\devstaticlib\lib\Debug\StdAfx.obj
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe -lib @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP90F.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+IniFile.cpp
+LogFile.cpp
+StdAfx.cpp
+ﾗｲﾌﾞﾗﾘを作成中...
+<h3>
+--------------------構成: devjava - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/devjava.res" /d "_DEBUG" "M:\Develop\VC\project_dev_lib\devjava\src\devjava.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP911.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /Gm /GX /ZI /Od /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVJAVA_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devjava.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\devjava\src\ByteArrayOutputStream.cpp"
+"M:\Develop\VC\project_dev_lib\devjava\src\devjava.cpp"
+"M:\Develop\VC\project_dev_lib\devjava\src\StringBuffer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP911.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP912.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /Gm /GX /ZI /Od /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVJAVA_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devjava.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\devjava\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP912.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP913.tmp" を作成し、次の内容を記録します
+[
+devstaticlib.lib /nologo /dll /incremental:yes /pdb:"..\lib\Debug/devjava.pdb" /debug /machine:I386 /out:"..\..\Release\bin\Debug/devjava.dll" /implib:"..\lib\Debug/devjava.lib" /pdbtype:sept /libpath:"..\..\release\lib\debug" 
+\Develop\VC\project_dev_lib\devjava\lib\Debug\ByteArrayOutputStream.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\StdAfx.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\StringBuffer.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.res
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP913.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+ByteArrayOutputStream.cpp
+devjava.cpp
+StringBuffer.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/devjava.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/devjava.exp を作成中
+<h3>
+--------------------構成: devlib - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/devlib.res" /d "_DEBUG" "M:\Develop\VC\project_dev_lib\devlib\src\devlib.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP919.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devlib" /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVLIB_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devlib.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\devlib\src\Cryptography.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\DebugSupport.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\devlib.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\devlib_debug.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\devlib_file.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\devlib_main.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\DevString.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\EnvInfo.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\FileDialogEx.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\FolderDialog.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\ImageObject.cpp"
+"M:\Develop\VC\project_dev_lib\devlib\src\StringEncode.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP919.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP91A.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devlib" /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVLIB_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devlib.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\devlib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP91A.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP91B.tmp" を作成し、次の内容を記録します
+[
+kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib Version.lib devjava.lib devstaticlib.lib /nologo /dll /incremental:yes /pdb:"..\lib\Debug/devlib.pdb" /debug /machine:I386 /out:"..\..\Release\bin\Debug/devlib.dll" /implib:"..\lib\Debug/devlib.lib" /pdbtype:sept /libpath:"..\..\release\lib\debug" 
+\Develop\VC\project_dev_lib\devlib\lib\Debug\Cryptography.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\DebugSupport.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib_debug.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib_file.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib_main.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\DevString.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\EnvInfo.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\FileDialogEx.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\FolderDialog.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\ImageObject.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\StdAfx.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\StringEncode.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP91B.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+Cryptography.cpp
+DebugSupport.cpp
+devlib.cpp
+devlib_debug.cpp
+devlib_file.cpp
+devlib_main.cpp
+DevString.cpp
+EnvInfo.cpp
+FileDialogEx.cpp
+FolderDialog.cpp
+ImageObject.cpp
+StringEncode.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/devlib.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/devlib.exp を作成中
+<h3>
+--------------------構成: devmfc - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/devmfc.res" /d "_DEBUG" /d "_AFXDLL" "M:\Develop\VC\project_dev_lib\devmfc\src\devmfc.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP921.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devmfc" /I "..\..\release\include\devlib" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DEVMFC_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devmfc.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\devmfc\src\AbstractWnd.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\BaseData.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\devmfc.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\EditEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\FileCtrl.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\FindFile.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\HwndTabCtrl.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\LineWnd.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\ListCtrlEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\ProgressStatusBar.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\RichEditCtrlEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\RichEditViewEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\TabCtrlEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\TabDropTarget.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\TabView.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\TreeCtrlEx.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\WndTabCtrl.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\XMLDocument.cpp"
+"M:\Develop\VC\project_dev_lib\devmfc\src\XMLItem.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP921.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP922.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devmfc" /I "..\..\release\include\devlib" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DEVMFC_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devmfc.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\devmfc\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP922.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP923.tmp" を作成し、次の内容を記録します
+[
+devlib.lib devstaticlib.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\Debug/devmfc.pdb" /debug /machine:I386 /def:".\devmfc.def" /out:"..\..\Release\bin\Debug/devmfc.dll" /implib:"..\lib\Debug/devmfc.lib" /pdbtype:sept /libpath:"..\include" /libpath:"..\..\release\lib\debug" 
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\AbstractWnd.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\BaseData.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\EditEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\FileCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\FindFile.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\HwndTabCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\LineWnd.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\ListCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\ProgressStatusBar.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\RichEditCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\RichEditViewEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\StdAfx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\TabCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\TabDropTarget.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\TabView.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\TreeCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\WndTabCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\XMLDocument.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\XMLItem.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP923.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+AbstractWnd.cpp
+BaseData.cpp
+devmfc.cpp
+EditEx.cpp
+FileCtrl.cpp
+FindFile.cpp
+HwndTabCtrl.cpp
+LineWnd.cpp
+ListCtrlEx.cpp
+ProgressStatusBar.cpp
+RichEditCtrlEx.cpp
+RichEditViewEx.cpp
+TabCtrlEx.cpp
+TabDropTarget.cpp
+TabView.cpp
+TreeCtrlEx.cpp
+WndTabCtrl.cpp
+XMLDocument.cpp
+XMLItem.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/devmfc.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/devmfc.exp を作成中
+<h3>
+--------------------構成: PluginLib - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP929.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Debug/PluginLib.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\PluginLib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP929.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92A.tmp" を作成し、次の内容を記録します
+[
+/nologo /out:"..\lib\Debug\PluginLib.lib" 
+\Develop\VC\PersonalWiki3\PluginLib\lib\Debug\StdAfx.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe -lib @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92A.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ﾗｲﾌﾞﾗﾘを作成中...
+devlib.lib(devlib.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は devjava.lib(devjava.dll) で定義されています; 2 つ目以降の定義は無視されます
+devmfc.lib(devmfc.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は devjava.lib(devjava.dll) で定義されています; 2 つ目以降の定義は無視されます
+<h3>
+--------------------構成: RSSPlugin - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/RSSPlugin.res" /d "_DEBUG" /d "_AFXDLL" "M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RSSPlugin.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92D.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Debug/RSSPlugin.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RSSBase.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RssCtrl.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RSSList.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RSSPlugin.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RssWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\SepBtn.cpp"
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\SetDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92D.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92E.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Debug/RSSPlugin.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\RSSPlugin\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92E.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92F.tmp" を作成し、次の内容を記録します
+[
+PluginLib.lib devlib.lib devmfc.lib Wininet.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\Debug/RSSPlugin.pdb" /debug /machine:I386 /def:".\RSSPlugin.def" /out:"..\..\bin\Debug\plugins\RSSPlugin.pwp" /implib:"..\lib\Debug/RSSPlugin.lib" /pdbtype:sept /libpath:"..\..\PluginLib\lib\Debug" /libpath:"..\..\..\project_dev_lib\release\lib\debug" 
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\RSSBase.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\RssCtrl.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\RSSList.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\RSSPlugin.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\RssWnd.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\SepBtn.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\SetDlg.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\StdAfx.obj
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\RSSPlugin.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+\Develop\VC\PersonalWiki3\PluginLib\lib\Debug\PluginLib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP92F.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+RSSBase.cpp
+RssCtrl.cpp
+M:\Develop\VC\PersonalWiki3\RSSPlugin\src\RssCtrl.cpp(433) : warning C4101: 'nErr' : ﾛｰｶﾙ変数は 1 度も使われません。
+RSSList.cpp
+RSSPlugin.cpp
+RssWnd.cpp
+SepBtn.cpp
+SetDlg.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/RSSPlugin.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/RSSPlugin.exp を作成中
+<h3>
+--------------------構成: DrawerPlugin - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/DrawerPlugin.res" /d "_DEBUG" /d "_AFXDLL" "M:\Develop\VC\PersonalWiki3\DrawerPlugin\src\DrawerPlugin.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP935.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devmfc" /I "..\..\..\project_dev_lib\release\include\drawer" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Debug/DrawerPlugin.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\DrawerPlugin\src\DrawerPlugin.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP935.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP936.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devmfc" /I "..\..\..\project_dev_lib\release\include\drawer" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Debug/DrawerPlugin.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\DrawerPlugin\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP936.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP937.tmp" を作成し、次の内容を記録します
+[
+PluginLib.lib devlib.lib devmfc.lib DrawerCore.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\Debug/DrawerPlugin.pdb" /debug /machine:I386 /def:".\DrawerPlugin.def" /out:"..\..\bin\Debug\plugins\DrawerPlugin.pwp" /implib:"..\lib\Debug/DrawerPlugin.lib" /pdbtype:sept /libpath:"..\..\PluginLib\lib\Debug" /libpath:"..\..\..\project_dev_lib\release\lib\debug" 
+\Develop\VC\PersonalWiki3\DrawerPlugin\lib\Debug\DrawerPlugin.obj
+\Develop\VC\PersonalWiki3\DrawerPlugin\lib\Debug\StdAfx.obj
+\Develop\VC\PersonalWiki3\DrawerPlugin\lib\Debug\DrawerPlugin.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+\Develop\VC\PersonalWiki3\PluginLib\lib\Debug\PluginLib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP937.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+DrawerPlugin.cpp
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/DrawerPlugin.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/DrawerPlugin.exp を作成中
+<h3>
+--------------------構成: BinderPlugin - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/BinderPlugin.res" /d "_DEBUG" /d "_AFXDLL" "M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BinderPlugin.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP93D.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devstaticlib" /I "..\..\..\_common\bregexp" /I "..\..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Debug/BinderPlugin.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\Binder.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BinderDropTarget.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BinderPlugin.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BinderWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\BregExpRap.cpp"
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\InpBinderNameDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP93D.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP93E.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\PluginLib\Include" /I "..\..\..\project_dev_lib\release\include\devlib" /I "..\..\..\project_dev_lib\release\include\devstaticlib" /I "..\..\..\_common\bregexp" /I "..\..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /Fp"..\lib\Debug/BinderPlugin.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\BinderPlugin\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP93E.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP93F.tmp" を作成し、次の内容を記録します
+[
+PluginLib.lib devlib.lib devstaticlib.lib BREGEXP.LIB Wininet.lib devmfc.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\Debug/BinderPlugin.pdb" /debug /machine:I386 /def:".\BinderPlugin.def" /out:"..\..\bin\Debug\plugins\BinderPlugin.pwp" /implib:"..\lib\Debug/BinderPlugin.lib" /pdbtype:sept /libpath:"..\..\PluginLib\lib\Debug" /libpath:"..\..\..\project_dev_lib\release\lib\debug" /libpath:"..\..\..\_common\bregexp" 
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\Binder.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\BinderDropTarget.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\BinderPlugin.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\BinderWnd.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\BregExpRap.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\InpBinderNameDlg.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\StdAfx.obj
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\BinderPlugin.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+\Develop\VC\PersonalWiki3\PluginLib\lib\Debug\PluginLib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP93F.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+Binder.cpp
+BinderDropTarget.cpp
+BinderPlugin.cpp
+BinderWnd.cpp
+BregExpRap.cpp
+InpBinderNameDlg.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/BinderPlugin.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/BinderPlugin.exp を作成中
+<h3>
+--------------------構成: DrawerCore - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug\DrawerCore/DrawerCore.res" /d "_DEBUG" /d "_AFXDLL" "M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerCore.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP945.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\drawer" /I "..\..\release\include\devmfc" /I "..\..\..\_common\gdiplus\include" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DRAWER_EXPORTS" /Fp"..\lib\Debug\DrawerCore/DrawerCore.pch" /Yu"stdafx.h" /Fo"..\lib\Debug\DrawerCore/" /Fd"..\lib\Debug\DrawerCore/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerConfig.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerCore.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerCtrl.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DRawerEdit.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawerPropDlg.cpp"
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\DrawInfo.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP945.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP946.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\drawer" /I "..\..\release\include\devmfc" /I "..\..\..\_common\gdiplus\include" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DRAWER_EXPORTS" /Fp"..\lib\Debug\DrawerCore/DrawerCore.pch" /Yc"stdafx.h" /Fo"..\lib\Debug\DrawerCore/" /Fd"..\lib\Debug\DrawerCore/" /FD /GZ /c 
+"M:\Develop\VC\project_dev_lib\DrawerCore\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP946.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP947.tmp" を作成し、次の内容を記録します
+[
+Gdiplus.lib devlib.lib devmfc.lib devstaticlib.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\Debug\DrawerCore/DrawerCore.pdb" /debug /machine:I386 /def:".\DrawerCore.def" /out:"..\..\Release\bin\Debug/DrawerCore.dll" /implib:"..\lib\Debug\DrawerCore/DrawerCore.lib" /pdbtype:sept /libpath:"..\..\..\_common\gdiplus" /libpath:"..\..\release\lib\debug" 
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\DrawerConfig.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\DrawerCore.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\DrawerCtrl.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\DRawerEdit.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\DrawerPropDlg.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\DrawInfo.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\StdAfx.obj
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\DrawerCore.res
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP947.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+DrawerConfig.cpp
+DrawerCore.cpp
+DrawerCtrl.cpp
+DRawerEdit.cpp
+DrawerPropDlg.cpp
+DrawInfo.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug\DrawerCore/DrawerCore.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug\DrawerCore/DrawerCore.exp を作成中
+<h3>
+--------------------構成: PersonalWiki - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/PersonalWiki.res" /d "_DEBUG" /d "_AFXDLL" "M:\Develop\VC\PersonalWiki3\src\PersonalWiki.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP94D.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\project_dev_lib\release\include\devlib" /I "..\..\project_dev_lib\release\include\devstaticlib" /I "..\PluginLib\include" /I "..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Debug/PersonalWiki.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\src\AbstractBaseWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AnalisysWiki.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage1.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage2.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage3.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage4.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage5.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage6.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage7.cpp"
+"M:\Develop\VC\PersonalWiki3\src\AppSetPage8.cpp"
+"M:\Develop\VC\PersonalWiki3\src\CalenderWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\src\CalView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\ChartWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgAppSet.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgDateInp.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixData.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixDataPage1.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixDataPage2.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixDataPage3.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgFixDataPage4.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgInfo.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgInpWikiPage.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgPwInp.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgToDay.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgToDoInp.cpp"
+"M:\Develop\VC\PersonalWiki3\src\DlgWikiInp.cpp"
+"M:\Develop\VC\PersonalWiki3\src\EvDatBase.cpp"
+"M:\Develop\VC\PersonalWiki3\src\EventDate.cpp"
+"M:\Develop\VC\PersonalWiki3\src\FindWnd.cpp"
+"M:\Develop\VC\PersonalWiki3\src\FixedData.cpp"
+"M:\Develop\VC\PersonalWiki3\src\InfoView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\MainFrm.cpp"
+"M:\Develop\VC\PersonalWiki3\src\MimeType.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PersonalWiki.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PreviewHtmlView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiDoc.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiIniFile.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiPlgList.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiPlugin.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiPluginException.cpp"
+"M:\Develop\VC\PersonalWiki3\src\PWikiView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\ScDateData.cpp"
+"M:\Develop\VC\PersonalWiki3\src\TodoData.cpp"
+"M:\Develop\VC\PersonalWiki3\src\ToDoView.cpp"
+"M:\Develop\VC\PersonalWiki3\src\WikiWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP94D.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP94E.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\project_dev_lib\release\include\devlib" /I "..\..\project_dev_lib\release\include\devstaticlib" /I "..\PluginLib\include" /I "..\..\project_dev_lib\release\include\devmfc" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Debug/PersonalWiki.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"M:\Develop\VC\PersonalWiki3\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP94E.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP94F.tmp" を作成し、次の内容を記録します
+[
+devlib.lib devstaticlib.lib devmfc.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\lib\Debug/PersonalWiki3.pdb" /debug /machine:I386 /out:"..\bin\Debug/PersonalWiki3.exe" /pdbtype:sept /libpath:"..\..\project_dev_lib\release\lib\debug" 
+\Develop\VC\PersonalWiki3\lib\Debug\AbstractBaseWnd.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AnalisysWiki.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AppSetPage1.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AppSetPage2.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AppSetPage3.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AppSetPage4.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AppSetPage5.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AppSetPage6.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AppSetPage7.obj
+\Develop\VC\PersonalWiki3\lib\Debug\AppSetPage8.obj
+\Develop\VC\PersonalWiki3\lib\Debug\CalenderWnd.obj
+\Develop\VC\PersonalWiki3\lib\Debug\CalView.obj
+\Develop\VC\PersonalWiki3\lib\Debug\ChartWnd.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgAppSet.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgDateInp.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgFixData.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgFixDataPage1.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgFixDataPage2.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgFixDataPage3.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgFixDataPage4.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgInfo.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgInpWikiPage.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgPwInp.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgToDay.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgToDoInp.obj
+\Develop\VC\PersonalWiki3\lib\Debug\DlgWikiInp.obj
+\Develop\VC\PersonalWiki3\lib\Debug\EvDatBase.obj
+\Develop\VC\PersonalWiki3\lib\Debug\EventDate.obj
+\Develop\VC\PersonalWiki3\lib\Debug\FindWnd.obj
+\Develop\VC\PersonalWiki3\lib\Debug\FixedData.obj
+\Develop\VC\PersonalWiki3\lib\Debug\InfoView.obj
+\Develop\VC\PersonalWiki3\lib\Debug\MainFrm.obj
+\Develop\VC\PersonalWiki3\lib\Debug\MimeType.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PersonalWiki.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PreviewHtmlView.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PWikiDoc.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PWikiIniFile.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PWikiPlgList.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PWikiPlugin.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PWikiPluginException.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PWikiView.obj
+\Develop\VC\PersonalWiki3\lib\Debug\ScDateData.obj
+\Develop\VC\PersonalWiki3\lib\Debug\StdAfx.obj
+\Develop\VC\PersonalWiki3\lib\Debug\TodoData.obj
+\Develop\VC\PersonalWiki3\lib\Debug\ToDoView.obj
+\Develop\VC\PersonalWiki3\lib\Debug\WikiWnd.obj
+\Develop\VC\PersonalWiki3\lib\Debug\PersonalWiki.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+\Develop\VC\PersonalWiki3\PluginLib\lib\Debug\PluginLib.lib
+\Develop\VC\PersonalWiki3\RSSPlugin\lib\Debug\RSSPlugin.lib
+\Develop\VC\PersonalWiki3\DrawerPlugin\lib\Debug\DrawerPlugin.lib
+\Develop\VC\PersonalWiki3\BinderPlugin\lib\Debug\BinderPlugin.lib
+\Develop\VC\project_dev_lib\DrawerCore\lib\Debug\DrawerCore\DrawerCore.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP94F.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+
+NOTE: WINVER has been defined as 0x0500 or greater which enables
+Windows NT 5.0 and Windows 98 features. When these headers were released,
+Windows NT 5.0 beta 1 and Windows 98 beta 2.1 were the current versions.
+
+For this release when WINVER is defined as 0x0500 or greater, you can only
+build beta or test applications.  To build a retail application,
+set WINVER to 0x0400 or visit http://www.microsoft.com/msdn/sdk
+to see if retail Windows NT 5.0 or Windows 98 headers are available.
+
+See the SDK release notes for more information.
+
+ｺﾝﾊﾟｲﾙ中...
+AbstractBaseWnd.cpp
+AnalisysWiki.cpp
+AppSetPage1.cpp
+AppSetPage2.cpp
+AppSetPage3.cpp
+AppSetPage4.cpp
+AppSetPage5.cpp
+AppSetPage6.cpp
+AppSetPage7.cpp
+AppSetPage8.cpp
+CalenderWnd.cpp
+CalView.cpp
+ChartWnd.cpp
+DlgAppSet.cpp
+DlgDateInp.cpp
+DlgFixData.cpp
+DlgFixDataPage1.cpp
+DlgFixDataPage2.cpp
+DlgFixDataPage3.cpp
+DlgFixDataPage4.cpp
+ｺｰﾄﾞを生成中...
+ｺﾝﾊﾟｲﾙ中...
+DlgInfo.cpp
+DlgInpWikiPage.cpp
+DlgPwInp.cpp
+DlgToDay.cpp
+DlgToDoInp.cpp
+DlgWikiInp.cpp
+EvDatBase.cpp
+EventDate.cpp
+FindWnd.cpp
+FixedData.cpp
+InfoView.cpp
+MainFrm.cpp
+MimeType.cpp
+PersonalWiki.cpp
+PreviewHtmlView.cpp
+PWikiDoc.cpp
+PWikiIniFile.cpp
+PWikiPlgList.cpp
+PWikiPlugin.cpp
+M:\Develop\VC\PersonalWiki3\src\PWikiPlugin.cpp(59) : warning C4101: 'nErr' : ﾛｰｶﾙ変数は 1 度も使われません。
+PWikiPluginException.cpp
+ｺｰﾄﾞを生成中...
+ｺﾝﾊﾟｲﾙ中...
+PWikiView.cpp
+ScDateData.cpp
+TodoData.cpp
+ToDoView.cpp
+WikiWnd.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+一時ﾌｧｲﾙ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP953.bat" を作成し、次の内容を記録します
+[
+@echo off
+copy /Y ..\..\project_dev_lib\release\bin\debug\devlib.dll ..\bin\debug
+copy /Y ..\..\project_dev_lib\release\bin\debug\devjava.dll ..\bin\debug
+copy /Y ..\..\project_dev_lib\release\bin\debug\devmfc.dll ..\bin\debug
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "C:\DOCUME~1\Owner\LOCALS~1\Temp\RSP953.bat" の作成中
+
+        1 個のファイルをコピーしました。
+        1 個のファイルをコピーしました。
+        1 個のファイルをコピーしました。
+
+
+
+<h3>結果</h3>
+PersonalWiki3.exe - ｴﾗｰ 0、警告 4
+</pre>
+</body>
+</html>

@@ -1,0 +1,12 @@
+; DrawerPlugin.def : DLL 用のモジュール パラメータ宣言
+
+LIBRARY      "DrawerPlugin"
+DESCRIPTION  'DrawerPlugin Windows Dynamic Link Library'
+
+EXPORTS
+    GetPluginInfo       @1
+    ShowSetupDlg        @2
+    GetUse              @3
+    SetUse              @4
+    ExitPlugin          @5
+    ; 明示的なエクスポートはここへ記述できます

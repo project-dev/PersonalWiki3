@@ -1,0 +1,269 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# åxçê: Ç±ÇÃ‹∞∏ΩÕﬂ∞Ω Ãß≤Ÿ Çï“èWÇ‹ÇΩÇÕçÌèúÇµÇ»Ç¢Ç≈Ç≠ÇæÇ≥Ç¢!
+
+###############################################################################
+
+Project: "BinderPlugin"=.\BinderPlugin\src\BinderPlugin.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devmfc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name PluginLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DrawerCore"=..\project_dev_lib\DrawerCore\src\DrawerCore.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "DrawerPlugin"=.\DrawerPlugin\src\DrawerPlugin.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devmfc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name PluginLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ExcelExportPlugin"=.\MsExcelExportPlugin\src\ExcelExportPlugin.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name PluginLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PersonalWiki"=.\src\PersonalWiki.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devmfc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name PluginLib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name RSSPlugin
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DrawerPlugin
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name BinderPlugin
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name DrawerCore
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PluginLib"=.\PluginLib\src\PluginLib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devmfc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RSSPlugin"=.\RSSPlugin\src\RSSPlugin.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devmfc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name PluginLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "WordExportPlugin"=.\MsWordExportPlugin\src\WordExportPlugin.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name PluginLib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devjava"=..\project_dev_lib\devjava\src\devjava.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devlib"=..\project_dev_lib\devlib\src\devlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devmfc"=..\project_dev_lib\devmfc\src\devmfc.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name devjava
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devlib
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name devstaticlib
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "devstaticlib"=..\project_dev_lib\devstaticlib\src\devstaticlib.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

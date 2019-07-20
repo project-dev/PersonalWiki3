@@ -1,0 +1,1254 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PersonalWiki.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#include ""l.jpn\\afxprint.rc""        // 印刷/印刷プレビュー リソース\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\icon2.ico"
+IDR_PERSONTYPE          ICON    DISCARDABLE     "res\\PWikiDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_SETICON             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_WIKITREE            BITMAP  DISCARDABLE     "res\\WikiTree.bmp"
+IDB_TODOSTATE           BITMAP  DISCARDABLE     "res\\ToDoState.bmp"
+IDR_WIKIWND             BITMAP  DISCARDABLE     "res\\WikiMenu.bmp"
+IDB_WIKITOOLBAR256      BITMAP  DISCARDABLE     "res\\WikiMenu256.bmp"
+IDB_MAIN_TB_IMG         BITMAP  DISCARDABLE     "res\\MainToolBar.bmp"
+IDR_DLGWIKIINP          BITMAP  DISCARDABLE     "res\\DlgWikiInp.bmp"
+IDB_DLGWIKIINP256       BITMAP  DISCARDABLE     "res\\DlgWikiInp256.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_APP_END
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      IDM_PWIKI_SET
+    BUTTON      IDM_FIXED_DATA
+    SEPARATOR
+    BUTTON      IDM_HELP
+    BUTTON      IDM_RULE
+END
+
+IDR_WIKIWND TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      IDM_ADDWIKI
+    BUTTON      IDM_EDITWIKI
+    BUTTON      IDM_DELWIKI
+    SEPARATOR
+    BUTTON      IDM_RENAME_WIKI
+    SEPARATOR
+    BUTTON      IDM_EXP_HTML
+    BUTTON      IDM_EXP_TEXT
+    BUTTON      IDM_PLUGIN_EXPORT
+    SEPARATOR
+    BUTTON      ID_BTN_TREEREFRESH
+END
+
+IDR_DLGWIKIINP TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_WIKI_BOLD
+    BUTTON      ID_WIKI_ITALIC
+    BUTTON      ID_WIKI_UNDERLINE
+    BUTTON      ID_WIKI_STRIKE
+    BUTTON      ID_WIKI_LIST
+    BUTTON      ID_WIKI_NUMLIST
+    BUTTON      ID_WIKI_HEAD
+    BUTTON      ID_WIKI_LINK
+    BUTTON      ID_WIKI_RET
+    BUTTON      ID_WIKI_HLINE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "ﾌｧｲﾙ(&F)"
+    BEGIN
+        MENUITEM "PersonalWiki3の終了(&X)",     ID_APP_END
+    END
+    POPUP "設定(&S)"
+    BEGIN
+        MENUITEM "定期データの設定",            IDM_FIXED_DATA
+        MENUITEM "Personal Wikiの設定",         IDM_PWIKI_SET
+    END
+    POPUP "ﾍﾙﾌﾟ(&H)"
+    BEGIN
+        MENUITEM "ヘルプ",                      IDM_HELP
+        MENUITEM "ルール",                      IDM_RULE
+        MENUITEM SEPARATOR
+        MENUITEM "Personal Wiki のﾊﾞｰｼﾞｮﾝ情報(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_EDIT_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "ToDo"
+    BEGIN
+        MENUITEM "追加",                        IDM_TODO_ADD
+        MENUITEM "編集",                        IDM_TODO_EDIT
+        MENUITEM "削除",                        IDM_TODO_DEL
+    END
+END
+
+IDR_DLGINFOMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "定期データの設定",            IDM_FIXED_DATA
+        MENUITEM "PersonalWikiの設定",          IDM_PWIKI_SET
+        MENUITEM SEPARATOR
+        MENUITEM "バージョン情報",              ID_APP_ABOUT
+        MENUITEM "終了",                        IDM_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "キャンセル",                  IDM_DUMMY
+    END
+END
+
+IDR_WIKIMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "1"
+    BEGIN
+        MENUITEM "新規作成(&N)",                IDM_ADDWIKI
+        MENUITEM "編集(&E)",                    IDM_EDITWIKI
+        MENUITEM "削除(&D)",                    IDM_DELWIKI
+        MENUITEM SEPARATOR
+        MENUITEM "名前の変更(&R)",              IDM_RENAME_WIKI
+        MENUITEM SEPARATOR
+        POPUP "インポート"
+        BEGIN
+            MENUITEM "URLを指定してインポート",     IDM_URL_IMPORT
+        END
+        POPUP "エクスポート"
+        BEGIN
+            MENUITEM "HTMLにエクスポート",          IDM_EXP_HTML
+            MENUITEM "テキストファイルにエクスポート", IDM_EXP_TEXT
+            MENUITEM "プラグインによるエクスポート", IDM_PLUGIN_EXPORT
+        END
+        MENUITEM "プロパティ(&P)",              IDM_PROPERTY
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PersonalWiki3 のﾊﾞｰｼﾞｮﾝ情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,10,20,20
+    LTEXT           "Personal Wiki3 Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright Project D.E.V 2007-2009",IDC_STATIC,40,25,119,
+                    8
+    DEFPUSHBUTTON   "OK",IDOK,179,10,50,14,WS_GROUP
+END
+
+IDD_DLGINFO DIALOG DISCARDABLE  0, 0, 243, 10
+STYLE DS_SETFOREGROUND | WS_POPUP | WS_BORDER
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           " 00:00:00",IDC_TIME,217,0,26,8,SS_CENTERIMAGE
+END
+
+IDD_DLGINPTODO DIALOGEX 0, 0, 350, 267
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ToDo入力"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    LTEXT           "項目名",IDC_LB_NAME,7,7,35,14
+    EDITTEXT        IDC_ED_NAME,49,7,174,14,ES_AUTOHSCROLL
+    LTEXT           "カテゴリ",IDC_CATEGORY,229,7,24,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_CMB_CATEGORY,258,7,85,190,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "詳細",IDC_LB_DETAIL,7,29,35,8
+    EDITTEXT        IDC_ED_DETAIL,49,29,294,158,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "開始予定日",IDC_LB_PLAN_START,7,197,35,15,
+                    SS_CENTERIMAGE,0,HIDC_LB_PLAN_START
+    CONTROL         "DateTimePicker1",IDC_DT_PLAN_START,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,49,197,50,15
+    LTEXT           "終了予定日",IDC_LB_PLAN_END,104,197,35,15,
+                    SS_CENTERIMAGE,0,HIDC_LB_PLAN_END
+    CONTROL         "DateTimePicker1",IDC_DT_PLAN_END,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,146,197,52,15
+    LTEXT           "開始日",IDC_LB_PROCESS_START,7,219,35,15,SS_CENTERIMAGE,
+                    0,HIDC_LB_PROCESS_START
+    CONTROL         "DateTimePicker1",IDC_DT_PROGRES_START,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,49,219,50,15
+    LTEXT           "終了日",IDC_LB_PROCESS_END,104,219,35,15,SS_CENTERIMAGE,
+                    0,HIDC_LB_PROCESS_END
+    CONTROL         "DateTimePicker1",IDC_DT_PROGRES_END,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,146,219,52,15
+    LTEXT           "状態",IDC_STATIC,206,197,15,15,SS_CENTERIMAGE
+    COMBOBOX        IDC_CMB_STATE,234,197,48,63,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "進捗率",IDC_LB_PROCESS,206,218,22,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_PROCESS,234,218,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,238,246,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,293,246,50,14
+END
+
+IDD_DLGINPDATE DIALOG DISCARDABLE  0, 0, 367, 291
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "スケジュール入力"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "詳細",IDC_LB_DETAIL,7,7,35,8
+    EDITTEXT        IDC_ED_DETAIL,7,26,353,186,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_NOHIDESEL | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_ED_HELP,10,220,350,44,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,253,270,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,310,270,50,14
+END
+
+IDD_DlgFixedData DIALOG DISCARDABLE  0, 0, 398, 339
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定期データ設定"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,283,318,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,341,318,50,14
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,7,7,384,302
+END
+
+IDD_FIXDATAPAGE1 DIALOG DISCARDABLE  0, 0, 376, 287
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,362,208
+    LTEXT           "日付",IDC_STATIC,7,221,15,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_MONTH,35,221,24,14,ES_AUTOHSCROLL
+    LTEXT           "月",IDC_STATIC,66,221,9,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_DAY,81,221,24,14,ES_AUTOHSCROLL
+    LTEXT           "日",IDC_STATIC,113,221,9,14,SS_CENTERIMAGE
+    CONTROL         "休日",IDC_CHK_HOLYDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,129,221,38,14
+    COMBOBOX        IDC_CMB_OPTION,169,221,90,54,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "内容",IDC_STATIC,7,241,15,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_DATA,35,241,334,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "追加",IDC_BTN_ADD,210,266,50,14
+    PUSHBUTTON      "更新",IDC_BTN_MOD,265,266,50,14
+    PUSHBUTTON      "削除",IDC_BTN_DEL,319,266,50,14
+END
+
+IDD_FIXDATAPAGE2 DIALOG DISCARDABLE  0, 0, 376, 283
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,362,225
+    LTEXT           "内容",IDC_STATIC,7,239,15,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_DATA,35,239,334,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "更新",IDC_BTN_MOD,319,262,50,14
+END
+
+IDD_FIXDATAPAGE3 DIALOG DISCARDABLE  0, 0, 376, 283
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,362,197
+    GROUPBOX        "条件指定",IDC_STATIC,7,207,362,28
+    COMBOBOX        IDC_CMB_SPAN,14,217,48,64,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_DAYS,67,217,48,64,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "内容",IDC_STATIC,7,240,15,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_DATA,35,240,334,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "追加",IDC_BTN_ADD,210,262,50,14
+    PUSHBUTTON      "更新",IDC_BTN_MOD,265,262,50,14
+    PUSHBUTTON      "削除",IDC_BTN_DEL,319,262,50,14
+END
+
+IDD_FIXDATAPAGE4 DIALOG DISCARDABLE  0, 0, 376, 286
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,362,195
+    GROUPBOX        "曜日指定",IDC_STATIC,7,208,362,28
+    CONTROL         "日",IDC_CHK_SUN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    12,219,23,10
+    CONTROL         "月",IDC_CHK_MON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    35,219,23,10
+    CONTROL         "火",IDC_CHK_TUE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    61,219,23,10
+    CONTROL         "水",IDC_CHK_WED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    86,219,23,10
+    CONTROL         "木",IDC_CHK_THU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,219,23,10
+    CONTROL         "金",IDC_CHK_FRI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    137,219,23,10
+    CONTROL         "土",IDC_CHK_SAT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    162,219,23,10
+    LTEXT           "内容",IDC_STATIC,7,241,15,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_DATA,35,241,334,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "追加",IDC_BTN_ADD,210,265,50,14
+    PUSHBUTTON      "更新",IDC_BTN_MOD,265,265,50,14
+    PUSHBUTTON      "削除",IDC_BTN_DEL,319,265,50,14
+END
+
+IDD_DLG_APP_SET DIALOG DISCARDABLE  0, 0, 391, 291
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "設定"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,275,270,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,334,270,50,14
+    CONTROL         "List1",IDC_LIST,"SysListView32",WS_BORDER | WS_TABSTOP,
+                    7,7,66,255
+    GROUPBOX        "Static",IDC_VIEWAREA,77,7,307,255,NOT WS_VISIBLE
+END
+
+IDD_DLG_APP_SETPAGE1 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,126,32
+    CONTROL         "完了したToDoは一定期間後に削除",IDC_CHK_END_TODO_DEL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,7,118,10
+    EDITTEXT        IDC_ED_END_TODO_DEL_SPAN,22,20,64,14,ES_AUTOHSCROLL
+    LTEXT           "日後に削除",IDC_STATIC,92,20,35,14,SS_CENTERIMAGE
+    GROUPBOX        "",IDC_STATIC,138,7,152,32
+    CONTROL         "パスワードを使う",IDC_CHK_PASSWORD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,145,7,64,10
+    EDITTEXT        IDC_ED_PASSWORD,153,20,131,14,ES_AUTOHSCROLL
+    GROUPBOX        "起動時のアクティブタブ",IDC_STATIC,7,47,126,28
+    CONTROL         "スケジュール",IDC_RAD_SC,"Button",BS_AUTORADIOBUTTON,12,
+                    60,54,10
+    CONTROL         "メモ",IDC_RAD_MEMO,"Button",BS_AUTORADIOBUTTON,71,60,27,
+                    10
+    CONTROL         "起動時、メインウィンドウも表示する",
+                    IDC_CHK_RUN_MAINWND_SHOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,83,117,10
+    CONTROL         "PersonalWiki ToDayを使う",IDC_CHK_USE_TODAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,128,83,91,10
+    GROUPBOX        "カテゴリ",IDC_STATIC,7,101,283,142
+    LISTBOX         IDC_CATEGORYLIST,12,114,174,121,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_ED_CATEGORY,191,114,93,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "追加",IDC_BTN_ADD,234,131,50,14
+    PUSHBUTTON      "更新",IDC_BTN_MOD,234,147,50,14
+    PUSHBUTTON      "削除",IDC_BTN_DEL,234,163,50,14
+END
+
+IDD_DLG_APP_SETPAGE2 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "定期休暇設定",IDC_STATIC,7,7,283,77
+    CONTROL         "指定しない",IDC_RAD_NONE,"Button",BS_AUTORADIOBUTTON,14,
+                    18,47,10
+    CONTROL         "週休二日",IDC_RAD_2HOLIDAY,"Button",BS_AUTORADIOBUTTON,
+                    14,31,43,10
+    GROUPBOX        "",IDC_STATIC,14,45,269,31
+    CONTROL         "曜日設定",IDC_RAD_CUSTOM1,"Button",BS_AUTORADIOBUTTON,
+                    14,45,43,10
+    CONTROL         "日",IDC_CHK_SUNDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,24,59,23,10
+    CONTROL         "月",IDC_CHK_MONDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,47,59,23,10
+    CONTROL         "火",IDC_CHK_TUEDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,70,59,23,10
+    CONTROL         "水",IDC_CHK_WEDDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,59,23,10
+    CONTROL         "木",IDC_CHK_THUDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,117,59,23,10
+    CONTROL         "金",IDC_CHK_FRIDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,141,59,23,10
+    CONTROL         "土",IDC_CHK_SATDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,165,59,23,10
+    GROUPBOX        "記念日設定",IDC_STATIC,7,91,283,80
+    CONTROL         "List1",IDC_SPDAY_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,14,102,269,61
+END
+
+IDD_DLG_APP_SETPAGE3 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "改行記号を使う(改行記号がない場合、行は連結されます)",
+                    IDC_CHK_USE_RET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    7,183,10
+    LTEXT           "スタイルシート",IDC_STATIC,7,25,43,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMB_CSS,60,25,86,94,CBS_DROPDOWNLIST | CBS_SORT | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "※CSSフォルダにスタイルシートファイルを入れることで選択できます。",
+                    IDC_STATIC,43,42,247,8
+    CONTROL         "先頭と末尾へのリンクを利用する",IDC_CHK_TBLINK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,55,111,10
+    CONTROL         "フッタに添付ファイル一覧を表示する。",
+                    IDC_CHK_SHOWATTACH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,69,126,10
+    CONTROL         "変換時間を表示する",IDC_CHK_CONV_TIME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,82,75,10
+END
+
+IDD_DLG_APP_SETPAGE4 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_SET_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,4,6,60,236
+    CONTROL         "List2",IDC_FONT_NAME_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,73,6,136,154
+    CONTROL         "List3",IDC_FONT_SIZE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,214,6,75,154
+    EDITTEXT        IDC_ED_SAMPLE,70,168,219,74,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+END
+
+IDD_DLG_APP_SETPAGE5 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_PLG_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,283,118
+    LTEXT           "詳細",IDC_STATIC,7,129,15,8
+    EDITTEXT        IDC_ED_PLG_DETAIL,7,143,283,80,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "設定",IDC_BTN_PLG_SET,240,229,50,14
+END
+
+IDD_DLG_APP_SETPAGE7 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,7,283,183
+    CONTROL         "有効",IDC_CHK_USE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,193,30,14
+    LTEXT           "拡張子",IDC_STATIC,39,193,22,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_EXT,81,193,208,14,ES_AUTOHSCROLL
+    LTEXT           "MIME Type",IDC_STATIC,39,211,37,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_MIME,81,211,209,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "追加",IDC_BTN_ADD,127,229,50,14
+    PUSHBUTTON      "削除",IDC_BTN_DEL,182,229,50,14
+    PUSHBUTTON      "変更",IDC_BTN_MOD,240,229,50,14
+END
+
+IDD_DLG_WIKIINP DIALOG DISCARDABLE  0, 0, 399, 333
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "編集"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "",IDC_ED_WIKITEXT,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | 
+                    ES_WANTRETURN | WS_BORDER | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP,7,16,183,214
+    GROUPBOX        "",IDC_HTMLDUMMY,196,16,196,214,NOT WS_VISIBLE
+    LTEXT           "添付ファイル一覧",IDC_STATIC,7,233,52,8
+    CONTROL         "List1",IDC_ATTACHLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,246,385,61
+    PUSHBUTTON      "プレビュー",IDC_BTN_PREVIEW,7,312,50,14
+    DEFPUSHBUTTON   "OK",IDOK,289,312,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,342,312,50,14
+END
+
+IDD_DLG_PW_INP DIALOG DISCARDABLE  0, 0, 187, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "パスワード入力"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "パスワードを入力してください。",IDC_STATIC,7,7,89,8
+    EDITTEXT        IDC_ED_PASSWORD,7,23,173,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,70,44,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,44,50,14
+END
+
+IDD_DLG_INPWIKIPAGE DIALOG DISCARDABLE  0, 0, 187, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新規ページの作成"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "作成するWikiページ名",IDC_STATIC,7,7,66,8
+    EDITTEXT        IDC_ED_NAME,7,22,173,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,75,42,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,42,50,14
+END
+
+IDD_DLG_APP_SETPAGE6 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,7,7,283,31
+    CONTROL         "ログを出力する",IDC_CHK_USELOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,7,60,10
+    CONTROL         "致命的エラーログ",IDC_CHK_USE_FATAL_LOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,22,67,10
+    CONTROL         "状態ログ",IDC_CHK_USE_STATE_LOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,107,22,42,10
+    CONTROL         "例外ログ",IDC_CHK_USE_EXCEPT_LOG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,169,22,42,10
+END
+
+IDD_DLG_APP_SETPAGE8 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "外部メディア連携",IDC_STATIC,7,7,283,98
+    CONTROL         "外部メディア連携を利用する",IDC_CHK_USE_USB_LINK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,20,98,10
+    LTEXT           "連携時のディレクトリ(ドライブ名を含まない)",IDC_STATIC,
+                    13,35,126,8
+    LTEXT           "1:",IDC_STATIC,13,50,8,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_PATH1,23,50,120,14,ES_AUTOHSCROLL
+    LTEXT           "2:",IDC_STATIC,153,50,8,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_PATH2,163,50,120,14,ES_AUTOHSCROLL
+    LTEXT           "3:",IDC_STATIC,13,68,8,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_PATH3,23,68,120,14,ES_AUTOHSCROLL
+    LTEXT           "4:",IDC_STATIC,153,68,8,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_PATH4,163,68,120,14,ES_AUTOHSCROLL
+    CONTROL         "ドライブの割り当てられたネットワークも対象にする",
+                    IDC_CHK_NETDRV,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | 
+                    WS_TABSTOP,13,87,162,10
+END
+
+IDD_DLG_TODAY DIALOG DISCARDABLE  0, 0, 305, 219
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "PersonalWiki Today's"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,248,198,50,14
+    EDITTEXT        IDC_ED_TODAY,7,19,145,170,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "今日の予定",IDC_STATIC,7,7,35,8
+    LTEXT           "明日の予定",IDC_STATIC,159,7,35,8
+    EDITTEXT        IDC_ED_NEXTDAY,159,19,139,76,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+    LTEXT           "明後日の予定",IDC_STATIC,159,103,42,8
+    EDITTEXT        IDC_ED_NEXTNEXTDAY,159,116,139,73,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL
+END
+
+IDD_DLGURLIMP DIALOG DISCARDABLE  0, 0, 231, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "URL入力"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,117,90,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,174,90,50,14
+    LTEXT           "WikiのURL",IDC_STATIC,7,7,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_URL,47,7,177,14,ES_AUTOHSCROLL
+    LTEXT           "ページ名",IDC_STATIC,7,28,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_PAGE,47,28,177,14,ES_AUTOHSCROLL
+    LTEXT           "UserID",IDC_STATIC,7,48,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_ID,47,48,177,14,ES_AUTOHSCROLL
+    LTEXT           "パスワード",IDC_STATIC,7,68,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_PW,47,68,177,14,ES_AUTOHSCROLL
+END
+
+IDD_DLG_WIKI_PROP DIALOG DISCARDABLE  0, 0, 187, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "プロパティ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,160,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,160,50,14
+    CONTROL         "暗号化する",IDC_CHK_CRYPT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,126,49,10
+    LTEXT           "Wikiパス名",IDC_STATIC,7,7,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_WIKIPATH,45,7,135,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "作成日",IDC_STATIC,7,26,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_CREATEDATE,45,26,135,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "更新日",IDC_STATIC,7,46,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_UPDATEDATE,45,46,135,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "凍結する",IDC_CHK_COLD,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,15,140,42,10
+    GROUPBOX        "オプション",IDC_STATIC,7,115,173,41
+END
+
+IDD_DLG_PLUGIN_EXPORT DIALOG DISCARDABLE  0, 0, 187, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "エクスポート"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,78,48,50,14
+    PUSHBUTTON      "ｷｬﾝｾﾙ",IDCANCEL,130,48,50,14
+    COMBOBOX        IDC_CMB_EXPORT,7,7,134,79,CBS_DROPDOWNLIST | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "設定",IDC_BTN_CONF,146,7,34,14
+    LTEXT           "対象ページ",IDC_STATIC,7,26,34,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_ED_WIKIPATH,45,26,135,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DLG_APP_SETPAGE9 DIALOG DISCARDABLE  0, 0, 297, 250
+STYLE WS_CHILD
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "情報バー",IDC_STATIC,7,7,283,24
+    CONTROL         "スケジュール",IDC_CHK_SC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,17,50,10
+    CONTROL         "定期データ",IDC_CHK_FIX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,94,17,46,10
+    CONTROL         "ToDo",IDC_CHK_TODO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,181,17,28,10
+    GROUPBOX        "時間表示",IDC_STATIC,7,38,283,23
+    CONTROL         "時間を表示する",IDC_SHOWTIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,12,48,62,10
+    CONTROL         "時間は秒まで表示する",IDC_CHK_VIEW_SEC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,94,48,87,10
+    GROUPBOX        "色の設定",IDC_STATIC,7,69,283,52,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "サンプル",IDC_STATIC,12,83,82,12,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_BORDER
+    LTEXT           "文字色",IDC_STATIC,105,83,22,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "背景色",IDC_STATIC,105,103,22,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PersonalWiki3\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "PersonalWiki3\0"
+            VALUE "LegalCopyright", "Copyright (C) Project D.E.V 2007-2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PersonalWiki3.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "PersonalWiki\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FIXDATAPAGE3 DLGINIT
+BEGIN
+    IDC_CMB_SPAN, 0x403, 4, 0
+0xe691, 0x0031, 
+    IDC_CMB_SPAN, 0x403, 4, 0
+0xe691, 0x0032, 
+    IDC_CMB_SPAN, 0x403, 4, 0
+0xe691, 0x0033, 
+    IDC_CMB_SPAN, 0x403, 4, 0
+0xe691, 0x0034, 
+    IDC_CMB_SPAN, 0x403, 4, 0
+0xe691, 0x0035, 
+    IDC_CMB_DAYS, 0x403, 7, 0
+0xfa93, 0x6a97, 0xfa93, "\000" 
+    IDC_CMB_DAYS, 0x403, 7, 0
+0x8e8c, 0x6a97, 0xfa93, "\000" 
+    IDC_CMB_DAYS, 0x403, 7, 0
+0xce89, 0x6a97, 0xfa93, "\000" 
+    IDC_CMB_DAYS, 0x403, 7, 0
+0x8590, 0x6a97, 0xfa93, "\000" 
+    IDC_CMB_DAYS, 0x403, 7, 0
+0xd896, 0x6a97, 0xfa93, "\000" 
+    IDC_CMB_DAYS, 0x403, 7, 0
+0xe08b, 0x6a97, 0xfa93, "\000" 
+    IDC_CMB_DAYS, 0x403, 7, 0
+0x7993, 0x6a97, 0xfa93, "\000" 
+    0
+END
+
+IDD_FIXDATAPAGE1 DLGINIT
+BEGIN
+    IDC_CMB_OPTION, 0x403, 19, 0
+0xc682, 0xad82, 0xc982, 0xc882, 0xc982, 0xe082, 0xb582, 0xc882, 0xa282, 
+"\000" 
+    IDC_CMB_OPTION, 0x403, 23, 0
+0x788b, 0xfa93, 0xcc82, 0xea8f, 0x878d, 0x4181, 0x8297, 0xfa93, 0xc982, 
+0xb782, 0xe982, "\000" 
+    IDC_CMB_OPTION, 0x403, 23, 0
+0x788b, 0xfa93, 0xcc82, 0xea8f, 0x878d, 0x4181, 0x4f91, 0xfa93, 0xc982, 
+0xb782, 0xe982, "\000" 
+    0
+END
+
+IDD_DLGINPTODO DLGINIT
+BEGIN
+    IDC_CMB_STATE, 0x403, 7, 0
+0xa296, 0x8592, 0xe88e, "\000" 
+    IDC_CMB_STATE, 0x403, 7, 0
+0xce91, 0x9e89, 0x8692, "\000" 
+    IDC_CMB_STATE, 0x403, 7, 0
+0x6d8a, 0x4694, 0xae8a, "\000" 
+    IDC_CMB_STATE, 0x403, 5, 0
+0xd291, 0xbf82, "\000" 
+    IDC_CMB_STATE, 0x403, 5, 0
+0xae8a, 0xb997, "\000" 
+    IDC_CMB_STATE, 0x403, 5, 0
+0xdb95, 0xaf97, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        VERTGUIDE, 40
+        HORZGUIDE, 10
+        HORZGUIDE, 33
+    END
+
+    IDD_DLG_APP_SETPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        VERTGUIDE, 12
+        VERTGUIDE, 22
+        VERTGUIDE, 133
+        VERTGUIDE, 138
+        VERTGUIDE, 145
+        VERTGUIDE, 153
+        VERTGUIDE, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+        HORZGUIDE, 20
+        HORZGUIDE, 34
+        HORZGUIDE, 39
+        HORZGUIDE, 47
+        HORZGUIDE, 60
+        HORZGUIDE, 70
+        HORZGUIDE, 83
+        HORZGUIDE, 93
+        HORZGUIDE, 101
+        HORZGUIDE, 114
+        HORZGUIDE, 131
+        HORZGUIDE, 147
+        HORZGUIDE, 163
+        HORZGUIDE, 235
+    END
+
+    IDD_DLG_APP_SETPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        VERTGUIDE, 14
+        VERTGUIDE, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+        HORZGUIDE, 91
+        HORZGUIDE, 102
+        HORZGUIDE, 163
+        HORZGUIDE, 171
+    END
+
+    IDD_DLG_APP_SETPAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 289
+        VERTGUIDE, 70
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 242
+        HORZGUIDE, 160
+        HORZGUIDE, 168
+    END
+
+    IDD_DLG_APP_SETPAGE7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        VERTGUIDE, 39
+        VERTGUIDE, 64
+        VERTGUIDE, 81
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+        HORZGUIDE, 193
+        HORZGUIDE, 211
+    END
+
+    IDD_DLG_WIKIINP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        VERTGUIDE, 190
+        VERTGUIDE, 196
+        TOPMARGIN, 16
+        BOTTOMMARGIN, 326
+        HORZGUIDE, 230
+        HORZGUIDE, 241
+        HORZGUIDE, 307
+    END
+
+    IDD_DLG_APP_SETPAGE8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        VERTGUIDE, 13
+        VERTGUIDE, 143
+        VERTGUIDE, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+        HORZGUIDE, 20
+        HORZGUIDE, 35
+        HORZGUIDE, 50
+        HORZGUIDE, 64
+        HORZGUIDE, 68
+        HORZGUIDE, 87
+        HORZGUIDE, 105
+        HORZGUIDE, 193
+        HORZGUIDE, 211
+    END
+
+    IDD_DLG_TODAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        VERTGUIDE, 152
+        VERTGUIDE, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 212
+        HORZGUIDE, 19
+        HORZGUIDE, 95
+        HORZGUIDE, 103
+        HORZGUIDE, 116
+        HORZGUIDE, 189
+    END
+
+    IDD_DLGURLIMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        VERTGUIDE, 40
+        VERTGUIDE, 47
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+        HORZGUIDE, 21
+        HORZGUIDE, 28
+        HORZGUIDE, 42
+        HORZGUIDE, 48
+        HORZGUIDE, 62
+        HORZGUIDE, 68
+        HORZGUIDE, 82
+    END
+
+    IDD_DLG_WIKI_PROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 15
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+        HORZGUIDE, 21
+        HORZGUIDE, 26
+        HORZGUIDE, 46
+        HORZGUIDE, 115
+        HORZGUIDE, 126
+        HORZGUIDE, 140
+        HORZGUIDE, 156
+    END
+
+    IDD_DLG_PLUGIN_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        VERTGUIDE, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+        HORZGUIDE, 26
+    END
+
+    IDD_DLG_APP_SETPAGE9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        VERTGUIDE, 12
+        VERTGUIDE, 94
+        VERTGUIDE, 105
+        VERTGUIDE, 136
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+        HORZGUIDE, 17
+        HORZGUIDE, 38
+        HORZGUIDE, 48
+        HORZGUIDE, 69
+        HORZGUIDE, 83
+        HORZGUIDE, 103
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "PersonalWiki\n\nPerson\n\n\nPersonalWiki.Document\nPerson Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Personal Wiki"
+    AFX_IDS_IDLEMESSAGE     "ﾚﾃﾞｨ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "上書"
+    ID_INDICATOR_REC        "記録"
+    ID_INDICATOR_KANA       "ｶﾅ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "新規にﾌｧｲﾙを作成\n新規ﾌｧｲﾙ"
+    ID_FILE_OPEN            "既存のﾌｧｲﾙを開く\n開く"
+    ID_FILE_CLOSE           "作業中のﾌｧｲﾙを閉じる\n閉じる"
+    ID_FILE_SAVE            "作業中のﾌｧｲﾙを上書きして保存\n保存"
+    ID_FILE_SAVE_AS         "作業中のﾌｧｲﾙを新しい名前で保存\n名前をつけて保存"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "バージョン情報を表示します\nバージョン情報"
+    ID_APP_EXIT             "ｱﾌﾟﾘｹｰｼｮﾝを終了し、ﾌｧｲﾙの保存を指示\n終了"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE2       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE3       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE4       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE5       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE6       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE7       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE8       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE9       "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE10      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE11      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE12      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE13      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE14      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE15      "指定のﾌｧｲﾙを開く"
+    ID_FILE_MRU_FILE16      "指定のﾌｧｲﾙを開く"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "次のｳｨﾝﾄﾞｳに切り替える\n次のﾍﾟｲﾝ"
+    ID_PREV_PANE            "前のｳｨﾝﾄﾞｳに切り替える\n前のﾍﾟｲﾝ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "作業中のｳｨﾝﾄﾞｳを分割\n分割"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "選択範囲を消去\n消去"
+    ID_EDIT_CLEAR_ALL       "すべて消去\nすべて消去"
+    ID_EDIT_COPY            "選択範囲をｺﾋﾟｰしてｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\nｺﾋﾟｰ"
+    ID_EDIT_CUT             "選択範囲を切り取ってｸﾘｯﾌﾟﾎﾞｰﾄﾞに保存\n切り取り"
+    ID_EDIT_FIND            "指定した文字列の検索\n検索"
+    ID_EDIT_PASTE           "ｸﾘｯﾌﾟﾎﾞｰﾄﾞの内容を貼り付け\n貼り付け"
+    ID_EDIT_REPEAT          "直前に行った動作を繰り返す\n繰り返し"
+    ID_EDIT_REPLACE         "指定した文字列を他の文字列で置換\n置換"
+    ID_EDIT_SELECT_ALL      "ﾌｧｲﾙ内のすべてを選択\nすべて選択"
+    ID_EDIT_UNDO            "直前に行った動作を元に戻す\n元に戻す"
+    ID_EDIT_REDO            "直前に行った動作を繰り返す\n繰り返す"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "ﾂｰﾙ ﾊﾞｰの 表示/非表示\nﾂｰﾙ ﾊﾞｰの表示切り替え"
+    IDC_NEXTBTN             ">>"
+    IDC_PREVBTN             "<<"
+    IDC_DTCTRL              "カレンダーコントロール"
+    IDC_TAB                 "タブコントロール"
+    IDS_WIKITREE            "Wikiツリー"
+    IDC_PWIKI_BALLOON       "バルーン"
+    IDS_BTN_WIKIADD         "Wikiページ追加"
+    IDS_BTN_WIKIEDIT        "ページ編集"
+    IDS_BTN_WIKIDEL         "Wikiページ削除"
+    IDS_BTN_FIND            "検索"
+    IDS_CMB_FIND            "検索コンボボックス"
+    IDS_FIND_LIST           "検索リスト"
+    IDS_TODOLIST1           "List1"
+    IDS_TODOLIST2           "List2"
+    IDS_TODOLIST3           "List3"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "ｳｨﾝﾄﾞｳのｻｲｽﾞを変更"
+    AFX_IDS_SCMOVE          "ｳｨﾝﾄﾞｳの位置を変更"
+    AFX_IDS_SCMINIMIZE      "ｳｨﾝﾄﾞｳを最小化する"
+    AFX_IDS_SCMAXIMIZE      "ｳｨﾝﾄﾞｳを最大化する"
+    AFX_IDS_SCNEXTWINDOW    "次のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCPREVWINDOW    "前のｳｨﾝﾄﾞｳに切り替える"
+    AFX_IDS_SCCLOSE         "作業中のｳｨﾝﾄﾞｳを閉じ、変更したﾌｧｲﾙの保存を指示"
+    IDC_TODOTAB             "ToDoタブ"
+    IDS_TODOCHKTIMER        "ToDoChkTimer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "ｳｨﾝﾄﾞｳを通常のｻｲｽﾞに戻す"
+    AFX_IDS_SCTASKLIST      "ｱﾌﾟﾘｹｰｼｮﾝの切り替え"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TODOLIST4           "List4"
+    IDS_TODOLIST5           "List5"
+    IDS_TODOLIST6           "List6"
+    IDS_TODOLIST7           "List7"
+    IDS_PREVIEW             "プレビュー"
+    IDS_CALWND              "カレンダー"
+    IDS_WIKIWND             "WIKIWIND"
+    IDS_FINDWND             "FINDWND"
+    IDS_MEMOTAB             "Memo"
+    IDC_TODAYBTN            "今日"
+    IDC_WIKITAB             "Wikiタブ"
+    IDC_WIKIEDITWND         "編集"
+    IDC_HTMLVIEW            "HTML表示"
+    IDS_TODOLIST8           "チャート"
+    IDS_CH_HSCROLLBAR       "水平スクロール"
+    IDS_CH_VSCROLLBAR       "垂直スクロールバー"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_FIXED_DATA          "定期データを設定します\n定期データ"
+    IDM_PWIKI_SET           "設定を行います\n設定"
+    IDM_ADDWIKI             "新規Wikiページ作成\n新規Wikiページ作成"
+    IDM_EDITWIKI            "Wikiページの編集\nWikiページの編集"
+    IDM_DELWIKI             "Wikiページの削除\nWikiページの削除"
+    IDM_EXP_HTML            "HTMLにエクスポート\nHTMLにエクスポート"
+    IDM_EXP_TEXT            "テキストファイルにエクスポート\nテキストファイルにエクスポート"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_RENAME_WIKI         "Wikiページのリネーム\nWikiページのリネーム"
+    IDM_RULE                "ルールを表示します\nルール"
+    IDM_HELP                "ヘルプを表示します\nヘルプ"
+    ID_WIKI_BOLD            "ボールド\nボールド"
+    ID_WIKI_ITALIC          "イタリック\nイタリック"
+    ID_WIKI_UNDERLINE       "アンダーライン\nアンダーライン"
+    ID_WIKI_STRIKE          "打ち消し線\n打ち消し線"
+    ID_WIKI_LIST            "箇条書き\n箇条書き"
+    ID_WIKI_NUMLIST         "番号付き箇条書き\n番号付き箇条書き"
+    ID_WIKI_HEAD            "タイトル\nタイトル"
+    ID_WIKI_LINK            "リンク\nリンク"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WIKI_RET             "改行\n改行"
+    ID_WIKI_HLINE           "水平線\n水平線"
+    ID_BTN_TREEREFRESH      "ツリーを最新の状態にする"
+    ID_APP_END              "PersonalWiki3を終了します\nPersonalWiki3を終了します"
+    IDM_PLUGIN_EXPORT       "プラグインによるエクスポート"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CMB_FILTER_STATE    "フィルター用：状態"
+    IDS_CMB_FILTER_CATEGORY "フィルター用：カテゴリ"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\PersonalWiki.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#include "l.jpn\afxprint.rc"        // 印刷/印刷プレビュー リソース
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,7 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by PersonalWiki.rc
+//
+#define HIDC_LB_PLAN_END                0x3f2    // IDD_DLGINPTODO
+#define HIDC_LB_PLAN_START              0x3f0    // IDD_DLGINPTODO
+#define HIDC_LB_PROCESS_END             0x3fa    // IDD_DLGINPTODO
+#define HIDC_LB_PROCESS_START           0x3f8    // IDD_DLGINPTODO

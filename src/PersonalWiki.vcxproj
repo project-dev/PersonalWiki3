@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseBuild|Win32">
+      <Configuration>ReleaseBuild</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseBuild|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseBuild|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\..\lib\Release\</OutDir>
+    <IntDir>.\..\lib\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\..\lib\Debug\</OutDir>
+    <IntDir>.\..\lib\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseBuild|Win32'">
+    <OutDir>.\..\lib\ReleaseBuild\</OutDir>
+    <IntDir>.\..\lib\ReleaseBuild\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\project_dev_lib\release\include\devlib;..\..\project_dev_lib\release\include\devstaticlib;..\PluginLib\include;..\..\project_dev_lib\release\include\devmfc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerOutput>All</AssemblerOutput>
+      <AssemblerListingLocation>..\brow\Release/</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\lib\Release\PersonalWiki.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\lib\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\lib\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy /Y ..\..\project_dev_lib\release\bin\release\devlib.dll ..\bin\release
+copy /Y ..\..\project_dev_lib\release\bin\release\devjava.dll ..\bin\release
+copy /Y ..\..\project_dev_lib\release\bin\release\devmfc.dll ..\bin\release
+..\..\_common\upx.exe -9 ..\bin\release\PersonalWiki3.exe</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\lib\Release\PersonalWiki.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\lib\Release\PersonalWiki.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <OutputFile>..\bin\Release/PersonalWiki3.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\project_dev_lib\release\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>devlib.lib;devstaticlib.lib;devmfc.lib;Wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>..\..\project_dev_lib\release\include\devlib;..\..\project_dev_lib\release\include\devstaticlib;..\PluginLib\include;..\..\project_dev_lib\release\include\devmfc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\lib\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\lib\Debug\PersonalWiki.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\lib\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\lib\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy /Y ..\..\project_dev_lib\release\bin\debug\devlib.dll ..\bin\debug
+copy /Y ..\..\project_dev_lib\release\bin\debug\devjava.dll ..\bin\debug
+copy /Y ..\..\project_dev_lib\release\bin\debug\devmfc.dll ..\bin\debug</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\lib\Debug\PersonalWiki.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\lib\Debug\PersonalWiki.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\bin\Debug/PersonalWiki3.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\project_dev_lib\release\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>devlib.lib;devstaticlib.lib;devmfc.lib;Wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseBuild|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>..\..\project_dev_lib\release\include\devlib;..\..\project_dev_lib\release\include\devstaticlib;..\PluginLib\include;..\..\project_dev_lib\release\include\devmfc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\..\lib\ReleaseBuild\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\..\lib\ReleaseBuild\PersonalWiki.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\..\lib\ReleaseBuild\</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\lib\ReleaseBuild\</ProgramDataBaseFileName>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy /Y ..\..\project_dev_lib\release\bin\release\devlib.dll ..\release
+copy /Y ..\..\project_dev_lib\release\bin\release\devjava.dll ..\release
+copy /Y ..\..\project_dev_lib\release\bin\release\devmfc.dll ..\release
+..\..\_common\upx.exe -9 ..\release\PersonalWiki.exe</Command>
+    </PostBuildEvent>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\..\lib\ReleaseBuild\PersonalWiki.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0411</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\..\lib\ReleaseBuild\PersonalWiki.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>..\Release/PersonalWiki.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\project_dev_lib\release\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>devlib.lib;devstaticlib.lib;devmfc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractBaseWnd.cpp" />
+    <ClCompile Include="AbstractWikiWnd.cpp" />
+    <ClCompile Include="AnalisysWiki.cpp" />
+    <ClCompile Include="AppSetPage1.cpp" />
+    <ClCompile Include="AppSetPage2.cpp" />
+    <ClCompile Include="AppSetPage3.cpp" />
+    <ClCompile Include="AppSetPage4.cpp" />
+    <ClCompile Include="AppSetPage5.cpp" />
+    <ClCompile Include="AppSetPage6.cpp" />
+    <ClCompile Include="AppSetPage7.cpp" />
+    <ClCompile Include="AppSetPage8.cpp" />
+    <ClCompile Include="AppSetPage9.cpp" />
+    <ClCompile Include="CalenderWnd.cpp" />
+    <ClCompile Include="CalView.cpp" />
+    <ClCompile Include="ChartWnd.cpp" />
+    <ClCompile Include="DlgAppSet.cpp" />
+    <ClCompile Include="DlgDateInp.cpp" />
+    <ClCompile Include="DlgFixData.cpp" />
+    <ClCompile Include="DlgFixDataPage1.cpp" />
+    <ClCompile Include="DlgFixDataPage2.cpp" />
+    <ClCompile Include="DlgFixDataPage3.cpp" />
+    <ClCompile Include="DlgFixDataPage4.cpp" />
+    <ClCompile Include="DlgImpUrlInp.cpp" />
+    <ClCompile Include="DlgInfo.cpp" />
+    <ClCompile Include="DlgInpWikiPage.cpp" />
+    <ClCompile Include="DlgPluginExport.cpp" />
+    <ClCompile Include="DlgPwInp.cpp" />
+    <ClCompile Include="DlgToDay.cpp" />
+    <ClCompile Include="DlgToDoInp.cpp" />
+    <ClCompile Include="DlgWikiInp.cpp" />
+    <ClCompile Include="DlgWikiProp.cpp" />
+    <ClCompile Include="EvDatBase.cpp" />
+    <ClCompile Include="EventDate.cpp" />
+    <ClCompile Include="FindWnd.cpp" />
+    <ClCompile Include="FixedData.cpp" />
+    <ClCompile Include="FixHtmlView.cpp" />
+    <ClCompile Include="InfoTabView.cpp" />
+    <ClCompile Include="InfoView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MimeType.cpp" />
+    <ClCompile Include="PersonalWiki.cpp" />
+    <ClCompile Include="PreviewHtmlView.cpp" />
+    <ClCompile Include="PWikiDoc.cpp" />
+    <ClCompile Include="PWikiIniFile.cpp" />
+    <ClCompile Include="PWikiPlgList.cpp" />
+    <ClCompile Include="PWikiPlugin.cpp" />
+    <ClCompile Include="PWikiPluginException.cpp" />
+    <ClCompile Include="PWikiView.cpp" />
+    <ClCompile Include="ScDateData.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseBuild|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='ReleaseBuild|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="TodoData.cpp" />
+    <ClCompile Include="ToDoView.cpp" />
+    <ClCompile Include="WikiEditWnd.cpp" />
+    <ClCompile Include="WikiWnd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PersonalWiki.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractBaseWnd.h" />
+    <ClInclude Include="AbstractWikiWnd.h" />
+    <ClInclude Include="AnalisysWiki.h" />
+    <ClInclude Include="AppSetPage1.h" />
+    <ClInclude Include="AppSetPage2.h" />
+    <ClInclude Include="AppSetPage3.h" />
+    <ClInclude Include="AppSetPage4.h" />
+    <ClInclude Include="AppSetPage5.h" />
+    <ClInclude Include="AppSetPage6.h" />
+    <ClInclude Include="AppSetPage7.h" />
+    <ClInclude Include="AppSetPage8.h" />
+    <ClInclude Include="AppSetPage9.h" />
+    <ClInclude Include="CalenderWnd.h" />
+    <ClInclude Include="CalView.h" />
+    <ClInclude Include="ChartWnd.h" />
+    <ClInclude Include="DlgAppSet.h" />
+    <ClInclude Include="DlgDateInp.h" />
+    <ClInclude Include="DlgFixData.h" />
+    <ClInclude Include="DlgFixDataPage1.h" />
+    <ClInclude Include="DlgFixDataPage2.h" />
+    <ClInclude Include="DlgFixDataPage3.h" />
+    <ClInclude Include="DlgFixDataPage4.h" />
+    <ClInclude Include="DlgImpUrlInp.h" />
+    <ClInclude Include="DlgInfo.h" />
+    <ClInclude Include="DlgInpWikiPage.h" />
+    <ClInclude Include="DlgPluginExport.h" />
+    <ClInclude Include="DlgPwInp.h" />
+    <ClInclude Include="DlgToDay.h" />
+    <ClInclude Include="DlgToDoInp.h" />
+    <ClInclude Include="DlgWikiInp.h" />
+    <ClInclude Include="DlgWikiProp.h" />
+    <ClInclude Include="EvDatBase.h" />
+    <ClInclude Include="EventDate.h" />
+    <ClInclude Include="FindWnd.h" />
+    <ClInclude Include="FixedData.h" />
+    <ClInclude Include="FixHtmlView.h" />
+    <ClInclude Include="InfoTabView.h" />
+    <ClInclude Include="InfoView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MimeType.h" />
+    <ClInclude Include="PersonalWiki.h" />
+    <ClInclude Include="PreviewHtmlView.h" />
+    <ClInclude Include="PWikiDoc.h" />
+    <ClInclude Include="PWikiIniFile.h" />
+    <ClInclude Include="PWikiPlgList.h" />
+    <ClInclude Include="..\Plugin\include\PWikiPlugin.h" />
+    <ClInclude Include="PWikiPlugin.h" />
+    <ClInclude Include="PWikiPluginException.h" />
+    <ClInclude Include="PWikiView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScDateData.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="TodoData.h" />
+    <ClInclude Include="ToDoView.h" />
+    <ClInclude Include="WikiEditWnd.h" />
+    <ClInclude Include="WikiWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\bitmap1.bmp" />
+    <CustomBuild Include="res\bmp00001.bmp" />
+    <CustomBuild Include="res\DlgWikiInp.bmp" />
+    <CustomBuild Include="res\DlgWikiInp256.bmp" />
+    <CustomBuild Include="res\icon2.ico" />
+    <CustomBuild Include="res\MainToolBar.bmp" />
+    <CustomBuild Include="res\PersonalWiki.ico" />
+    <CustomBuild Include="res\PersonalWiki.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\PWikiDoc.ico" />
+    <CustomBuild Include="res\ToDoState.bmp" />
+    <CustomBuild Include="res\Toolbar.bmp" />
+    <CustomBuild Include="res\toolbar1.bmp" />
+    <CustomBuild Include="res\WikiMenu.bmp" />
+    <CustomBuild Include="res\WikiMenu256.bmp" />
+    <CustomBuild Include="res\WikiTree.bmp" />
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

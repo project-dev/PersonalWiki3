@@ -1,0 +1,265 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: devstaticlib - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1B6.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Debug/devstaticlib.pch" /YX /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"D:\Develop\VC\project_dev_lib\devstaticlib\src\IniFile.cpp"
+"D:\Develop\VC\project_dev_lib\devstaticlib\src\LogFile.cpp"
+"D:\Develop\VC\project_dev_lib\devstaticlib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1B6.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1B7.tmp" を作成し、次の内容を記録します
+[
+/nologo /out:"..\..\Release\lib\Debug\devstaticlib.lib" 
+\Develop\VC\project_dev_lib\devstaticlib\lib\Debug\IniFile.obj
+\Develop\VC\project_dev_lib\devstaticlib\lib\Debug\LogFile.obj
+\Develop\VC\project_dev_lib\devstaticlib\lib\Debug\StdAfx.obj
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe -lib @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1B7.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+IniFile.cpp
+LogFile.cpp
+StdAfx.cpp
+ﾗｲﾌﾞﾗﾘを作成中...
+<h3>
+--------------------構成: devjava - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/devjava.res" /d "_DEBUG" "D:\Develop\VC\project_dev_lib\devjava\src\devjava.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1B8.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /Gm /GX /ZI /Od /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVJAVA_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devjava.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"D:\Develop\VC\project_dev_lib\devjava\src\ByteArrayOutputStream.cpp"
+"D:\Develop\VC\project_dev_lib\devjava\src\devjava.cpp"
+"D:\Develop\VC\project_dev_lib\devjava\src\StringBuffer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1B8.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1B9.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /Gm /GX /ZI /Od /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVJAVA_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devjava.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"D:\Develop\VC\project_dev_lib\devjava\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1B9.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1BA.tmp" を作成し、次の内容を記録します
+[
+devstaticlib.lib /nologo /dll /incremental:yes /pdb:"..\lib\Debug/devjava.pdb" /debug /machine:I386 /out:"..\..\Release\bin\Debug/devjava.dll" /implib:"..\lib\Debug/devjava.lib" /pdbtype:sept /libpath:"..\..\release\lib\debug" 
+\Develop\VC\project_dev_lib\devjava\lib\Debug\ByteArrayOutputStream.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\StdAfx.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\StringBuffer.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.res
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1BA.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+ByteArrayOutputStream.cpp
+devjava.cpp
+StringBuffer.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/devjava.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/devjava.exp を作成中
+<h3>
+--------------------構成: devlib - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/devlib.res" /d "_DEBUG" "D:\Develop\VC\project_dev_lib\devlib\src\devlib.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1BE.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devlib" /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVLIB_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devlib.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"D:\Develop\VC\project_dev_lib\devlib\src\Cryptography.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\DebugSupport.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\devlib.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\devlib_debug.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\devlib_file.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\devlib_main.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\DevString.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\EnvInfo.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\FileDialogEx.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\FolderDialog.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\ImageObject.cpp"
+"D:\Develop\VC\project_dev_lib\devlib\src\StringEncode.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1BE.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1BF.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devlib" /I "..\..\release\include\devjava" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DEVLIB_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devlib.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"D:\Develop\VC\project_dev_lib\devlib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1BF.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C0.tmp" を作成し、次の内容を記録します
+[
+kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib Version.lib devjava.lib devstaticlib.lib /nologo /dll /incremental:yes /pdb:"..\lib\Debug/devlib.pdb" /debug /machine:I386 /out:"..\..\Release\bin\Debug/devlib.dll" /implib:"..\lib\Debug/devlib.lib" /pdbtype:sept /libpath:"..\..\release\lib\debug" 
+\Develop\VC\project_dev_lib\devlib\lib\Debug\Cryptography.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\DebugSupport.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib_debug.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib_file.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib_main.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\DevString.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\EnvInfo.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\FileDialogEx.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\FolderDialog.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\ImageObject.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\StdAfx.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\StringEncode.obj
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C0.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+Cryptography.cpp
+DebugSupport.cpp
+devlib.cpp
+devlib_debug.cpp
+devlib_file.cpp
+devlib_main.cpp
+DevString.cpp
+EnvInfo.cpp
+FileDialogEx.cpp
+FolderDialog.cpp
+ImageObject.cpp
+StringEncode.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/devlib.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/devlib.exp を作成中
+<h3>
+--------------------構成: devmfc - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+Creating command line "rc.exe /l 0x411 /fo"..\lib\Debug/devmfc.res" /d "_DEBUG" /d "_AFXDLL" "D:\Develop\VC\project_dev_lib\devmfc\src\devmfc.rc"" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C4.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devmfc" /I "..\..\release\include\devlib" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DEVMFC_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devmfc.pch" /Yu"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"D:\Develop\VC\project_dev_lib\devmfc\src\AbstractWnd.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\BaseData.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\devmfc.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\EditEx.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\FileCtrl.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\FindFile.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\HwndTabCtrl.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\LineWnd.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\ListCtrlEx.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\ProgressStatusBar.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\RichEditCtrlEx.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\RichEditViewEx.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\TabCtrlEx.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\TabDropTarget.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\TabView.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\TreeCtrlEx.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\WndTabCtrl.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\XMLDocument.cpp"
+"D:\Develop\VC\project_dev_lib\devmfc\src\XMLItem.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C4.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C5.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\..\release\include\devmfc" /I "..\..\release\include\devlib" /I "..\..\release\include\devstaticlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_USRDLL" /D "DEVMFC_EXPORTS" /FR"..\lib\Debug/" /Fp"..\lib\Debug/devmfc.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"D:\Develop\VC\project_dev_lib\devmfc\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C5.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C6.tmp" を作成し、次の内容を記録します
+[
+devlib.lib devstaticlib.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"..\lib\Debug/devmfc.pdb" /debug /machine:I386 /def:".\devmfc.def" /out:"..\..\Release\bin\Debug/devmfc.dll" /implib:"..\lib\Debug/devmfc.lib" /pdbtype:sept /libpath:"..\include" /libpath:"..\..\release\lib\debug" 
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\AbstractWnd.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\BaseData.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\EditEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\FileCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\FindFile.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\HwndTabCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\LineWnd.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\ListCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\ProgressStatusBar.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\RichEditCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\RichEditViewEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\StdAfx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\TabCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\TabDropTarget.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\TabView.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\TreeCtrlEx.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\WndTabCtrl.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\XMLDocument.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\XMLItem.obj
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.res
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1C6.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ﾘｿｰｽをｺﾝﾊﾟｲﾙ中...
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ｺﾝﾊﾟｲﾙ中...
+AbstractWnd.cpp
+BaseData.cpp
+devmfc.cpp
+EditEx.cpp
+FileCtrl.cpp
+FindFile.cpp
+HwndTabCtrl.cpp
+LineWnd.cpp
+ListCtrlEx.cpp
+ProgressStatusBar.cpp
+RichEditCtrlEx.cpp
+RichEditViewEx.cpp
+TabCtrlEx.cpp
+TabDropTarget.cpp
+TabView.cpp
+TreeCtrlEx.cpp
+WndTabCtrl.cpp
+XMLDocument.cpp
+XMLItem.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+   ﾗｲﾌﾞﾗﾘ ..\lib\Debug/devmfc.lib とｵﾌﾞｼﾞｪｸﾄ ..\lib\Debug/devmfc.exp を作成中
+<h3>
+--------------------構成: PluginLib - Win32 Debug--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1CA.tmp" を作成し、次の内容を記録します
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\include" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"..\lib\Debug/PluginLib.pch" /Yc"stdafx.h" /Fo"..\lib\Debug/" /Fd"..\lib\Debug/" /FD /GZ /c 
+"D:\Develop\VC\PersonalWiki3\PluginLib\src\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1CA.tmp" 
+一時ﾌｧｲﾙ "C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1CB.tmp" を作成し、次の内容を記録します
+[
+/nologo /out:"..\lib\Debug\PluginLib.lib" 
+\Develop\VC\PersonalWiki3\PluginLib\lib\Debug\StdAfx.obj
+\Develop\VC\project_dev_lib\devjava\lib\Debug\devjava.lib
+\Develop\VC\project_dev_lib\devlib\lib\Debug\devlib.lib
+\Develop\VC\project_dev_lib\devmfc\lib\Debug\devmfc.lib
+\Develop\VC\project_dev_lib\Release\lib\Debug\devstaticlib.lib
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe -lib @C:\DOCUME~1\ozawa\LOCALS~1\Temp\RSP1CB.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+StdAfx.cpp
+ﾗｲﾌﾞﾗﾘを作成中...
+devlib.lib(devlib.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は devjava.lib(devjava.dll) で定義されています; 2 つ目以降の定義は無視されます
+devmfc.lib(devmfc.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR は devjava.lib(devjava.dll) で定義されています; 2 つ目以降の定義は無視されます
+
+
+
+<h3>結果</h3>
+PluginLib.lib - ｴﾗｰ 0、警告 2
+</pre>
+</body>
+</html>

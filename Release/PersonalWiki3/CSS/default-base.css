@@ -1,0 +1,227 @@
+/* 
+ * 基本スタイル
+ * スタイルをカスタマイズする際にはこのファイルを参考にしてください。
+ * このファイルのほかに、
+ *   default_normal.css
+ *   default_small.css
+ * の2つのスタイルシートが存在します。
+ * これらはフォントサイズを定義するスタイルシートです。
+ */
+
+/*
+ * 基本
+ */
+body{
+	margin				:0px 0px 0px 0px;
+}
+
+td{
+}
+
+/*
+ * 本文
+ */
+table.body{
+	WIDTH				:100%;
+	HEIGHT				:100%;
+	padding				:0px;
+	border-width		:0px;
+	border-height		:0px;
+	border-style		:SOLID;
+}
+
+td.body{
+	display:table-cell;
+	vertical-align		:top;
+	padding				:0px;
+	border-width		:0px;
+	border-height		:0px;
+	border-style		:SOLID;
+}
+
+/*
+ * 見出し
+ */
+h1{
+	margin				:0px 0px 0px 0px;
+	background			:#008888;
+
+	color				:#ffffff;
+	border-style		:SOLID;
+	border-left-width	:0px;
+	border-left-height	:0px;
+	border-right-width	:0px;
+	border-right-height	:0px;
+	border-top-width	:0px;
+	border-top-height	:0px;
+	border-bottom-width	:0px;
+	border-bottom-height:0px;
+	border-color		:#008888;
+	padding-top			:6px;
+	padding-left		:8px;
+	padding-right		:4px;
+	padding-bottom		:4px;
+}
+
+h2{
+	margin				:0px 0px 0px 0px;
+	background			:#FFFFFF;
+
+	color				:#000000;
+	border-style		:SOLID;
+	border-left-width	:8px;
+	border-left-height	:0px;
+	border-right-width	:1px;
+	border-right-height	:1px;
+	border-top-width	:1px;
+	border-top-height	:1px;
+	border-bottom-width	:1px;
+	border-bottom-height:1px;
+	border-color		:#008888;
+	padding-top			:4px;
+	padding-left		:2px;
+	padding-right		:2px;
+	padding-bottom		:2px;
+}
+
+h3{
+	margin				:0px 0px 4px 0px;
+	background			:#FFFFFF;
+
+	color				:#000000;
+	border-style		:SOLID;
+	border-left-width	:8px;
+	border-left-height	:0px;
+	border-right-width	:0px;
+	border-right-height	:0px;
+	border-top-width	:0px;
+	border-top-height	:0px;
+	border-bottom-width	:1px;
+	border-bottom-height:1px;
+	border-color		:#008888;
+}
+
+/*
+ * 整形文字列
+ */
+pre{
+	background-color	:#efefff;
+	padding				:4px;
+	border-style		:DASHED;
+	border-left-width	:1px;
+	border-left-height	:1px;
+	border-right-width	:1px;
+	border-right-height	:1px;
+	border-top-width	:1px;
+	border-top-height	:1px;
+	border-bottom-width	:1px;
+	border-bottom-height:1px;
+	border-color		:#AAAAFF;
+	margin				: 2px 2px 2px 2px;
+}
+
+/*
+ * テーブル
+ */
+table.normal{
+	padding				:0px;
+	background-color	:#EEEEFF;
+	border-style		:SOLID;
+	border-left-width	:1px;
+	border-left-height	:1px;
+	border-right-width	:1px;
+	border-right-height	:1px;
+	border-top-width	:1px;
+	border-top-height	:1px;
+	border-bottom-width	:1px;
+	border-bottom-height:1px;
+	border-color		:#000000;
+}
+td.normal{
+	padding				:2px;
+	background-color	:#FFFFFF;
+	border-style		:SOLID;
+	border-left-width	:1px;
+	border-left-height	:1px;
+	border-right-width	:1px;
+	border-right-height	:1px;
+	border-top-width	:1px;
+	border-top-height	:1px;
+	border-bottom-width	:1px;
+	border-bottom-height:1px;
+	border-color		:#000000;
+}
+td.head{
+	background-color	:#008888;
+	color				:WHITE;
+	border-style		:SOLID;
+	border-left-width	:1px;
+	border-left-height	:1px;
+	border-right-width	:1px;
+	border-right-height	:1px;
+	border-top-width	:1px;
+	border-top-height	:1px;
+	border-bottom-width	:1px;
+	border-bottom-height:1px;
+	border-color		:#000000;
+}
+
+/*
+ * 先頭/末尾リンク
+ */
+DIV.TBLink{
+	border-bottom-style	: SOLID;
+	border-bottom-width	: 1px;
+	border-bottom-height: 1px;
+	border-bottom-color	: #cfcfcf;
+
+	border-left-style	: SOLID;
+	border-left-width	: 1px;
+	border-left-height	: 1px;
+	border-left-color	: #cfcfcf;
+
+	border-right-style	: SOLID;
+	border-right-width	: 1px;
+	border-right-height	: 1px;
+	border-right-color	: #cfcfcf;
+
+	padding-top			: 2px;
+	padding-bottom		: 2px;
+	padding-right		: 2px;
+	background-color	: #efefef;
+	margin-bottom		: 2px;
+
+	text-aligne			: right;
+	text-decoration		: none; 
+}
+
+/*
+ * 箇条書き
+ */
+ol{
+	border-style		: SOLID;
+	border-width		: 0px;
+	border-height		: 0px;
+
+	margin-left			: 0px;
+	margin-top			: 0px;
+	margin-bottom		: 0px;
+}
+
+ul{
+	border-style		: SOLID;
+	border-width		: 0px;
+	border-height		: 0px;
+
+	margin-left			: 0px;
+	margin-top			: 0px;
+	margin-bottom		: 0px;
+
+	padding				: 2px;
+	padding-left		: 6px;
+}
+
+li{
+	margin-left			: 14px;
+	vertical-align		: middle;
+}

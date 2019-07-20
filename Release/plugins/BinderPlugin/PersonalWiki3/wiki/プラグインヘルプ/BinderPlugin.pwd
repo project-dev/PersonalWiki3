@@ -1,0 +1,10 @@
+*BinderPlugin
+バインダープラグインは、IEから気になる記事をドラッグアンドドロップで取り込むことが出来るプラグインです。~
+~
+正規表現には[[BREGEXP.DLL>http://www.hi-ho.ne.jp/babaq/bregexp.html]]を利用しています。~
+
+
+**使い方
+
+**更新履歴
+-初公開
